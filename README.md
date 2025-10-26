@@ -10,7 +10,7 @@ Our final product represents over a month of work and collaboration and we hope 
 
 Thanks,
 
--Group 10 (John Krupa, Yash Gupta, Thai An-Loung, Andrew Kwan, and Will Reil)
+
 ## Installation and Running Notes
 1. On a Linux system (our system was created on Linux Ubuntu 22.04.2), install the following 6 libraries with the following commands:
     - `sudo apt install cmake`
@@ -33,3 +33,5 @@ Thanks,
 - To view and modify the information on our database, we created an additional account, so go to <a href = "back4app.com"> Back4App </a> and login with the following credentials, and once done, go into "My Apps", then under the "EVNT" app, click the "Dashboard" button
     - Email: bllaaze4@gmail.com
     - Password: password
+
+AUTHORS: John Krupa, Yash Gupta, Thai An-Luong, Andrew Kwan, Will Reil
