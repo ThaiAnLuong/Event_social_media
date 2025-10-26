@@ -1,0 +1,45 @@
+\hypertarget{_create_event_8h_source}{}\doxysection{Create\+Event.\+h}
+\mbox{\hyperlink{_create_event_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <wx/spinctrl.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <wx/image.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}single\_include/nlohmann/json.hpp"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <wx/file.h>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}./dbhandler/eventdbhandler.h"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_create_event}{CreateEvent}}\ :\ \textcolor{keyword}{public}\ wxFrame}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_create_event}{CreateEvent}}(\textcolor{keyword}{const}\ wxString\ \&title,\ \textcolor{keyword}{const}\ wxPoint\ \&pos,\ \textcolor{keyword}{const}\ wxSize\ \&size,\ std::string);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ EventDBHandler\ *handler;\ }
+\DoxyCodeLine{00041\ \ \ \ \ std::string\ \mbox{\hyperlink{class_create_event_a47c540911daf9c0fa04da22213a05eb8}{host}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ wxTextCtrl\ *\mbox{\hyperlink{class_create_event_aed86b514f1ee1a0c9c3e2f5c747938e4}{eventName}};\ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ wxTextCtrl\ *\mbox{\hyperlink{class_create_event_a004f37e8164533e16fb18020d18f156e}{streetAddress}};\ }
+\DoxyCodeLine{00045\ \ \ \ \ wxTextCtrl\ *\mbox{\hyperlink{class_create_event_a543e5622c31bec65dad3e83dbab73cee}{city}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ wxTextCtrl\ *\mbox{\hyperlink{class_create_event_a4b3ddca4930d3efec25b17eddfbb226f}{state}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ wxTextCtrl\ *\mbox{\hyperlink{class_create_event_a640c36bc1fc9197eca510c6971e1a86c}{postalCode}};\ \ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ wxChoice\ *\mbox{\hyperlink{class_create_event_a9f352e97bcd7e70ce5dad72c3fb9232e}{startDay}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ wxChoice\ *\mbox{\hyperlink{class_create_event_a55a91302fe6cf323052caa07cea80507}{startMonth}};\ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ wxChoice\ *\mbox{\hyperlink{class_create_event_a52db25cc5e662801fc0af73aa8085835}{startYear}};\ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ wxChoice\ *\mbox{\hyperlink{class_create_event_ade8e66d85f37d7ad0173a31d0fff164c}{startTime}};\ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ wxChoice\ *\mbox{\hyperlink{class_create_event_ae0d8f48e953f0513133a77e469082e53}{endDay}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ wxChoice\ *\mbox{\hyperlink{class_create_event_a5ad1f7b539108bb84deebe1cdb590a8f}{endMonth}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ wxChoice\ *\mbox{\hyperlink{class_create_event_a88347a52cd48ef38d65b72e7c3594ee9}{endYear}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00055\ \ \ \ \ wxChoice\ *\mbox{\hyperlink{class_create_event_ac8e8a843c5284511bd9ad76cdc13ff55}{endTime}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ \ \ wxTextCtrl\ *\mbox{\hyperlink{class_create_event_a8be710dded397471473734e734af3db9}{price}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ wxTextCtrl\ *\mbox{\hyperlink{class_create_event_a244f2915eb15a9c4ccf580a7ef877500}{purchaseLink}};\ \ }
+\DoxyCodeLine{00058\ \ \ \ \ wxTextCtrl\ *\mbox{\hyperlink{class_create_event_ab22f2d64562978dfc6a740827d4add8c}{description}};\ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ wxButton\ *\mbox{\hyperlink{class_create_event_a53d94ad6cc0ec1e05baef3b5a2434108}{create}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_event_a46cd08f5fef1de4148d95cae52bd5eee}{onCreate}}(wxCommandEvent\ \&evt);}
+\DoxyCodeLine{00066\ \};}
+
+\end{DoxyCode}

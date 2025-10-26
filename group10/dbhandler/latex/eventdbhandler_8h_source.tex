@@ -1,0 +1,32 @@
+\hypertarget{eventdbhandler_8h_source}{}\doxysection{eventdbhandler.\+h}
+\mbox{\hyperlink{eventdbhandler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}single\_include/nlohmann/json.hpp"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}database\_handler.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#ifndef\ EVENTDBHANDLER\_CLASS\_H}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ EVENTDBHANDLER\_CLASS\_H}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_event_d_b_handler}{EventDBHandler}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_handler}{Handler}}\{\ \ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_event_d_b_handler_a006b610f149b08360bb3509367ef9408}{getEventId}}(std::string,\ std::string);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_event_d_b_handler}{EventDBHandler}}(std::string,\ std::string);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addEvent(std::string,\ std::string,\ std::string,\ std::string,\ std::string,\ std::string,\ std::string,\ std::string,\ \textcolor{keywordtype}{double},\ std::string,\ std::string);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ nlohmann::json\ getEvent(std::string,\ std::string);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ deleteEvent(std::string,\ std::string);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::vector<nlohmann::json>\ getEventsByHosts(std::vector<std::string>);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{comment}{//to\ do:\ add\ update\ methods}}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

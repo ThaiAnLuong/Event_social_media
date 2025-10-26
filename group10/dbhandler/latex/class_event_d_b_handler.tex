@@ -1,0 +1,90 @@
+\hypertarget{class_event_d_b_handler}{}\doxysection{Event\+DBHandler Class Reference}
+\label{class_event_d_b_handler}\index{EventDBHandler@{EventDBHandler}}
+Inheritance diagram for Event\+DBHandler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_event_d_b_handler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_event_d_b_handler_af0d3b50b41a66ce62f50ebea6b4b4e04}{Event\+DBHandler}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em defines constructor parameters for the various event functions \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_event_d_b_handler_a1a47bdd7f6219f7055fcc8111b30a378}\label{class_event_d_b_handler_a1a47bdd7f6219f7055fcc8111b30a378}} 
+void {\bfseries add\+Event} (std\+::string, std\+::string, std\+::string, std\+::string, std\+::string, std\+::string, std\+::string, std\+::string, double, std\+::string, std\+::string)
+\item 
+\mbox{\Hypertarget{class_event_d_b_handler_a5468967dd7c99064b6de148b2bf5f257}\label{class_event_d_b_handler_a5468967dd7c99064b6de148b2bf5f257}} 
+nlohmann\+::json {\bfseries get\+Event} (std\+::string, std\+::string)
+\item 
+\mbox{\Hypertarget{class_event_d_b_handler_a19483fffcfbcf618710b5aa02c4cfa3a}\label{class_event_d_b_handler_a19483fffcfbcf618710b5aa02c4cfa3a}} 
+void {\bfseries delete\+Event} (std\+::string, std\+::string)
+\item 
+\mbox{\Hypertarget{class_event_d_b_handler_a04b2b9e3fcc9046974978f0652ad0bd5}\label{class_event_d_b_handler_a04b2b9e3fcc9046974978f0652ad0bd5}} 
+std\+::vector$<$ nlohmann\+::json $>$ {\bfseries get\+Events\+By\+Hosts} (std\+::vector$<$ std\+::string $>$)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_handler}{Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_handler_a816a15102e240e4c7baa66f591d49540}\label{class_handler_a816a15102e240e4c7baa66f591d49540}} 
+{\bfseries Handler} (std\+::string, std\+::string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_event_d_b_handler_a006b610f149b08360bb3509367ef9408}{get\+Event\+Id}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em defines parameters for constructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_handler}{Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_handler_a766cc91bb0f825ce94c0de0d592a22e0}\label{class_handler_a766cc91bb0f825ce94c0de0d592a22e0}} 
+void {\bfseries do\+Request} ()
+\item 
+\mbox{\Hypertarget{class_handler_a978fe1e5cbcaefccbee1394d1abbff41}\label{class_handler_a978fe1e5cbcaefccbee1394d1abbff41}} 
+void {\bfseries request\+Setup} (std\+::string, std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{class_handler_a42d582802f9f2f9e1fae89cd4af3e58a}\label{class_handler_a42d582802f9f2f9e1fae89cd4af3e58a}} 
+void {\bfseries erase\+Files} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_handler}{Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_handler_ae0a9ebf3ecfc710745286a01cc55b1e2}\label{class_handler_ae0a9ebf3ecfc710745286a01cc55b1e2}} 
+std\+::string {\bfseries APIKey}
+\item 
+\mbox{\Hypertarget{class_handler_ae24b8d2b7ef31f4a8538abade8aa795c}\label{class_handler_ae24b8d2b7ef31f4a8538abade8aa795c}} 
+std\+::string {\bfseries app\+Id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_event_d_b_handler_af0d3b50b41a66ce62f50ebea6b4b4e04}\label{class_event_d_b_handler_af0d3b50b41a66ce62f50ebea6b4b4e04}} 
+\index{EventDBHandler@{EventDBHandler}!EventDBHandler@{EventDBHandler}}
+\index{EventDBHandler@{EventDBHandler}!EventDBHandler@{EventDBHandler}}
+\doxysubsubsection{\texorpdfstring{EventDBHandler()}{EventDBHandler()}}
+{\footnotesize\ttfamily Event\+DBHandler\+::\+Event\+DBHandler (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+defines constructor parameters for the various event functions 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_event_d_b_handler_a006b610f149b08360bb3509367ef9408}\label{class_event_d_b_handler_a006b610f149b08360bb3509367ef9408}} 
+\index{EventDBHandler@{EventDBHandler}!getEventId@{getEventId}}
+\index{getEventId@{getEventId}!EventDBHandler@{EventDBHandler}}
+\doxysubsubsection{\texorpdfstring{getEventId()}{getEventId()}}
+{\footnotesize\ttfamily string Event\+DBHandler\+::get\+Event\+Id (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+defines parameters for constructor 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{eventdbhandler_8h}{eventdbhandler.\+h}}\item 
+eventdbhandler.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,250 @@
+\hypertarget{classhome}{}\doxysection{home Class Reference}
+\label{classhome}\index{home@{home}}
+
+
+Home page containing buttons to go to different pages that provide different functionality.  
+
+
+
+
+{\ttfamily \#include $<$home.\+h$>$}
+
+Inheritance diagram for home\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classhome}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhome_a869ea5cadcc656867f95345c044a2acb}{home}} (const wx\+String \&title, const wx\+Point \&pos, const wx\+Size \&size, std\+::string)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classhome_a869ea5cadcc656867f95345c044a2acb}{home\+::home}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classhome_a1c9dab0d0f4f5429bcf4a656c510b043}\label{classhome_a1c9dab0d0f4f5429bcf4a656c510b043}} 
+void {\bfseries but\+Board\+Clicked} (wx\+Command\+Event \&evt)
+\item 
+void \mbox{\hyperlink{classhome_a0a14a88f39646ec873c70d3905e5e833}{but\+Search\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Function to bring up the search panel to search for users. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhome_ae8b69ca7da24a51d15dd8b8c5f1b799c}{but\+Accountlicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Function to load the information about the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhome_af93d0e9f32182f2ab55bebebe4315c27}{but\+Create\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Function to load the the event creation page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhome_a53dae804e5cfe1bf0cbffded839af915}{but\+Back\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Button to take you back to the home page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhome_a97cce33059a8c6bd56c3be312afd844a}{but\+Find\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Find the user searched and allow for following if the user is different from the logged in user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhome_a7d84d50864538206ce4c06f9529227ac}{but\+Edit\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Function to load the edit account window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhome_a23293622b6e5b0d12621dcbc323ea01e}{but\+Display\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Function to load the events from the followed users. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhome_adbffb0872f542885a5c8d5d903abad55}{close\+Frame}} (wx\+Close\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Function to display a closing message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classhome_ac89eb77a76a02558029d783e2c337e35}\label{classhome_ac89eb77a76a02558029d783e2c337e35}} 
+std\+::string {\bfseries user}
+\item 
+\mbox{\Hypertarget{classhome_ae290bae583224a3addb2839576e71ccb}\label{classhome_ae290bae583224a3addb2839576e71ccb}} 
+User\+DBHandler $\ast$ {\bfseries handler}
+\item 
+\mbox{\Hypertarget{classhome_a5f8428be8b8fd2cc0a43b7711285863d}\label{classhome_a5f8428be8b8fd2cc0a43b7711285863d}} 
+wx\+Panel $\ast$ {\bfseries main\+Panel}
+\item 
+\mbox{\Hypertarget{classhome_af2afa80c7c73555d8ba94d4167c45285}\label{classhome_af2afa80c7c73555d8ba94d4167c45285}} 
+wx\+Panel $\ast$ {\bfseries search\+Panel}
+\item 
+\mbox{\Hypertarget{classhome_a8f4687a1f9e7c7973eff0a7c16aa90d3}\label{classhome_a8f4687a1f9e7c7973eff0a7c16aa90d3}} 
+wx\+Panel $\ast$ {\bfseries but\+Panel}
+\item 
+\mbox{\Hypertarget{classhome_a9743e477c025d0801a6a19f8c39462f0}\label{classhome_a9743e477c025d0801a6a19f8c39462f0}} 
+wx\+Button $\ast$ {\bfseries but\+Back}
+\item 
+\mbox{\Hypertarget{classhome_ab4f55d447ade0389303306ac5fddfaff}\label{classhome_ab4f55d447ade0389303306ac5fddfaff}} 
+wx\+Button $\ast$ {\bfseries but\+Find}
+\item 
+\mbox{\Hypertarget{classhome_a8a2bc31477e941ce61539d02ebfd3260}\label{classhome_a8a2bc31477e941ce61539d02ebfd3260}} 
+wx\+Button $\ast$ {\bfseries but\+Board}
+\item 
+\mbox{\Hypertarget{classhome_a386a5306c0d285a22e000824b73b3d5c}\label{classhome_a386a5306c0d285a22e000824b73b3d5c}} 
+wx\+Button $\ast$ {\bfseries but\+Search}
+\item 
+\mbox{\Hypertarget{classhome_a65d998122c4f1c0bcd8effa6ddb37442}\label{classhome_a65d998122c4f1c0bcd8effa6ddb37442}} 
+wx\+Button $\ast$ {\bfseries but\+Acc\+Info}
+\item 
+\mbox{\Hypertarget{classhome_aa4858a2119a9205379dfd482abae52b2}\label{classhome_aa4858a2119a9205379dfd482abae52b2}} 
+wx\+Button $\ast$ {\bfseries but\+Create\+Eve}
+\item 
+\mbox{\Hypertarget{classhome_a9061cd21b30633c4b5f7d5f37e96c399}\label{classhome_a9061cd21b30633c4b5f7d5f37e96c399}} 
+wx\+Button $\ast$ {\bfseries butA}
+\item 
+\mbox{\Hypertarget{classhome_aad9302d7203029e04b30b6dfa5e4ca12}\label{classhome_aad9302d7203029e04b30b6dfa5e4ca12}} 
+wx\+Button $\ast$ {\bfseries but\+Edit}
+\item 
+\mbox{\Hypertarget{classhome_a58262e9a3911c7296ab51c4abcd8dace}\label{classhome_a58262e9a3911c7296ab51c4abcd8dace}} 
+wx\+Button $\ast$ {\bfseries but\+Display\+Eve}
+\item 
+\mbox{\Hypertarget{classhome_a35318dd69bdda07812efc513357b69c8}\label{classhome_a35318dd69bdda07812efc513357b69c8}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries u\+Name\+Box}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Home page containing buttons to go to different pages that provide different functionality. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classhome_a869ea5cadcc656867f95345c044a2acb}\label{classhome_a869ea5cadcc656867f95345c044a2acb}} 
+\index{home@{home}!home@{home}}
+\index{home@{home}!home@{home}}
+\doxysubsubsection{\texorpdfstring{home()}{home()}}
+{\footnotesize\ttfamily home\+::home (\begin{DoxyParamCaption}\item[{const wx\+String \&}]{title,  }\item[{const wx\+Point \&}]{pos,  }\item[{const wx\+Size \&}]{size,  }\item[{std\+::string}]{user }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classhome_a869ea5cadcc656867f95345c044a2acb}{home\+::home}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Title of the page \\
+\hline
+{\em pos} & Position of the window \\
+\hline
+{\em size} & Size of the window \\
+\hline
+{\em user} & Username of the logged in user \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classhome_ae8b69ca7da24a51d15dd8b8c5f1b799c}\label{classhome_ae8b69ca7da24a51d15dd8b8c5f1b799c}} 
+\index{home@{home}!butAccountlicked@{butAccountlicked}}
+\index{butAccountlicked@{butAccountlicked}!home@{home}}
+\doxysubsubsection{\texorpdfstring{butAccountlicked()}{butAccountlicked()}}
+{\footnotesize\ttfamily void home\+::but\+Accountlicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to load the information about the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger to handle the button click \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhome_a53dae804e5cfe1bf0cbffded839af915}\label{classhome_a53dae804e5cfe1bf0cbffded839af915}} 
+\index{home@{home}!butBackClicked@{butBackClicked}}
+\index{butBackClicked@{butBackClicked}!home@{home}}
+\doxysubsubsection{\texorpdfstring{butBackClicked()}{butBackClicked()}}
+{\footnotesize\ttfamily void home\+::but\+Back\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Button to take you back to the home page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger to handle the button click \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhome_af93d0e9f32182f2ab55bebebe4315c27}\label{classhome_af93d0e9f32182f2ab55bebebe4315c27}} 
+\index{home@{home}!butCreateClicked@{butCreateClicked}}
+\index{butCreateClicked@{butCreateClicked}!home@{home}}
+\doxysubsubsection{\texorpdfstring{butCreateClicked()}{butCreateClicked()}}
+{\footnotesize\ttfamily void home\+::but\+Create\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to load the the event creation page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger to handle the button click \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhome_a23293622b6e5b0d12621dcbc323ea01e}\label{classhome_a23293622b6e5b0d12621dcbc323ea01e}} 
+\index{home@{home}!butDisplayClicked@{butDisplayClicked}}
+\index{butDisplayClicked@{butDisplayClicked}!home@{home}}
+\doxysubsubsection{\texorpdfstring{butDisplayClicked()}{butDisplayClicked()}}
+{\footnotesize\ttfamily void home\+::but\+Display\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to load the events from the followed users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger to handle the button click \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhome_a7d84d50864538206ce4c06f9529227ac}\label{classhome_a7d84d50864538206ce4c06f9529227ac}} 
+\index{home@{home}!butEditClicked@{butEditClicked}}
+\index{butEditClicked@{butEditClicked}!home@{home}}
+\doxysubsubsection{\texorpdfstring{butEditClicked()}{butEditClicked()}}
+{\footnotesize\ttfamily void home\+::but\+Edit\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to load the edit account window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger to handle the button click \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhome_a97cce33059a8c6bd56c3be312afd844a}\label{classhome_a97cce33059a8c6bd56c3be312afd844a}} 
+\index{home@{home}!butFindClicked@{butFindClicked}}
+\index{butFindClicked@{butFindClicked}!home@{home}}
+\doxysubsubsection{\texorpdfstring{butFindClicked()}{butFindClicked()}}
+{\footnotesize\ttfamily void home\+::but\+Find\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find the user searched and allow for following if the user is different from the logged in user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger to handle the button click \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhome_a0a14a88f39646ec873c70d3905e5e833}\label{classhome_a0a14a88f39646ec873c70d3905e5e833}} 
+\index{home@{home}!butSearchClicked@{butSearchClicked}}
+\index{butSearchClicked@{butSearchClicked}!home@{home}}
+\doxysubsubsection{\texorpdfstring{butSearchClicked()}{butSearchClicked()}}
+{\footnotesize\ttfamily void home\+::but\+Search\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to bring up the search panel to search for users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger to handler button click \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhome_adbffb0872f542885a5c8d5d903abad55}\label{classhome_adbffb0872f542885a5c8d5d903abad55}} 
+\index{home@{home}!closeFrame@{closeFrame}}
+\index{closeFrame@{closeFrame}!home@{home}}
+\doxysubsubsection{\texorpdfstring{closeFrame()}{closeFrame()}}
+{\footnotesize\ttfamily void home\+::close\+Frame (\begin{DoxyParamCaption}\item[{wx\+Close\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to display a closing message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger to handle window close \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{home_8h}{home.\+h}}\item 
+\mbox{\hyperlink{home_8cpp}{home.\+cpp}}\end{DoxyCompactItemize}

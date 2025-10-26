@@ -1,0 +1,232 @@
+\hypertarget{class_edit}{}\doxysection{Edit Class Reference}
+\label{class_edit}\index{Edit@{Edit}}
+
+
+A derived class of wx\+Frame that allows the user to edit their account information and password.  
+
+
+
+
+{\ttfamily \#include $<$Edit.\+h$>$}
+
+Inheritance diagram for Edit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_edit}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_edit_a08ac6e1ab34fba378422e0d7d6fee611}{Edit}} (const wx\+String \&, const wx\+Point \&, const wx\+Size \&, std\+::string)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_edit}{Edit}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_edit_a92594a8483a46db25ee8bc5306035959}{pick}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Event handler function for the change\+Option listbox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_ab34a35123cd58bc926c5d4bf8daf594b}{save\+Pass\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Event handler function for the save\+Pass button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_ade279d9190d4be7f8ca4cb76c9942924}{save\+Info\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Event handler function for the save\+Info button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_edit_abd502de17fa7aefd0440c4fd90d09da9}\label{class_edit_abd502de17fa7aefd0440c4fd90d09da9}} 
+string {\bfseries cur\+User}
+\item 
+\mbox{\Hypertarget{class_edit_a494f7fab4ce82ea0db990f38a25a4ecf}\label{class_edit_a494f7fab4ce82ea0db990f38a25a4ecf}} 
+User\+DBHandler $\ast$ {\bfseries handler}
+\item 
+\mbox{\Hypertarget{class_edit_aab009deb90015f546e114b79992500dd}\label{class_edit_aab009deb90015f546e114b79992500dd}} 
+wx\+Panel $\ast$ {\bfseries main\+Panel}
+\item 
+\mbox{\Hypertarget{class_edit_a5e0a0419f08bcff6961d70ae235eb11d}\label{class_edit_a5e0a0419f08bcff6961d70ae235eb11d}} 
+wx\+Panel $\ast$ {\bfseries info\+Panel}
+\item 
+\mbox{\Hypertarget{class_edit_a8d784cc7a592e7085a3326e6729aaf02}\label{class_edit_a8d784cc7a592e7085a3326e6729aaf02}} 
+wx\+Panel $\ast$ {\bfseries password\+Panel}
+\item 
+\mbox{\Hypertarget{class_edit_aa2e65e1a7a29c3ef7016d8e48ac2142c}\label{class_edit_aa2e65e1a7a29c3ef7016d8e48ac2142c}} 
+wx\+Button $\ast$ {\bfseries save\+Info}
+\item 
+\mbox{\Hypertarget{class_edit_a36da792825ede81cca8e8b8697c63b01}\label{class_edit_a36da792825ede81cca8e8b8697c63b01}} 
+wx\+Button $\ast$ {\bfseries save\+Pass}
+\item 
+\mbox{\Hypertarget{class_edit_a06efb774251dc2711aa6ac362e890f49}\label{class_edit_a06efb774251dc2711aa6ac362e890f49}} 
+wx\+Array\+String {\bfseries options}
+\item 
+\mbox{\Hypertarget{class_edit_af83cc9b0c67969eb9dd25adf689eb7ed}\label{class_edit_af83cc9b0c67969eb9dd25adf689eb7ed}} 
+wx\+List\+Box $\ast$ {\bfseries change\+Option}
+\item 
+\mbox{\Hypertarget{class_edit_a112324a101d243368eea64c4e5ad6dbc}\label{class_edit_a112324a101d243368eea64c4e5ad6dbc}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries cur\+Pass}
+\item 
+\mbox{\Hypertarget{class_edit_acb7041aadc1aa422e0e4532c15c5c40e}\label{class_edit_acb7041aadc1aa422e0e4532c15c5c40e}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries new\+Pass}
+\item 
+\mbox{\Hypertarget{class_edit_ab36c3d1e2c8b34d00724bbe7dfd3a8e9}\label{class_edit_ab36c3d1e2c8b34d00724bbe7dfd3a8e9}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries con\+Pass}
+\item 
+\mbox{\Hypertarget{class_edit_a54b4ea8e89134be7ef1bde0cfc36d819}\label{class_edit_a54b4ea8e89134be7ef1bde0cfc36d819}} 
+wx\+Static\+Text $\ast$ {\bfseries cur\+Pass\+Text}
+\item 
+\mbox{\Hypertarget{class_edit_a89c59338803ce6e8b25ee5e664486e14}\label{class_edit_a89c59338803ce6e8b25ee5e664486e14}} 
+wx\+Static\+Text $\ast$ {\bfseries new\+Pass\+Text}
+\item 
+\mbox{\Hypertarget{class_edit_a6cc450063b600ff2609b5f7c25004344}\label{class_edit_a6cc450063b600ff2609b5f7c25004344}} 
+wx\+Static\+Text $\ast$ {\bfseries con\+Pass\+Text}
+\item 
+\mbox{\Hypertarget{class_edit_a6fb8d9271670ee96c19bec7e30785945}\label{class_edit_a6fb8d9271670ee96c19bec7e30785945}} 
+wx\+Static\+Text $\ast$ {\bfseries warn1}
+\item 
+\mbox{\Hypertarget{class_edit_a0343f7b1feef38530a399926e5f6c923}\label{class_edit_a0343f7b1feef38530a399926e5f6c923}} 
+wx\+Static\+Text $\ast$ {\bfseries warn2}
+\item 
+\mbox{\Hypertarget{class_edit_ae09143baef2e2581eda4f2bde3f54e95}\label{class_edit_ae09143baef2e2581eda4f2bde3f54e95}} 
+wx\+Static\+Text $\ast$ {\bfseries l\+Name\+Text}
+\item 
+\mbox{\Hypertarget{class_edit_abb70161d15059365b82b0439431a86ae}\label{class_edit_abb70161d15059365b82b0439431a86ae}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries l\+Name}
+\item 
+\mbox{\Hypertarget{class_edit_ade7f02292de90f0f8d83ed1151d931d4}\label{class_edit_ade7f02292de90f0f8d83ed1151d931d4}} 
+wx\+Static\+Text $\ast$ {\bfseries n\+Name\+Text}
+\item 
+\mbox{\Hypertarget{class_edit_abc828ccd8603a1b3bfed365f20b395bc}\label{class_edit_abc828ccd8603a1b3bfed365f20b395bc}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries n\+Name}
+\item 
+\mbox{\Hypertarget{class_edit_a885314a00d1b37432457221c81d947ae}\label{class_edit_a885314a00d1b37432457221c81d947ae}} 
+wx\+Static\+Text $\ast$ {\bfseries dob}
+\item 
+\mbox{\Hypertarget{class_edit_a8b1219ef8ba3dcd98a461259dbbc1964}\label{class_edit_a8b1219ef8ba3dcd98a461259dbbc1964}} 
+wx\+Spin\+Ctrl $\ast$ {\bfseries date\+Up\+Down}
+\item 
+\mbox{\Hypertarget{class_edit_a4d26ab74592b34c0969690bfa2607b74}\label{class_edit_a4d26ab74592b34c0969690bfa2607b74}} 
+wx\+Choice $\ast$ {\bfseries month\+Box}
+\item 
+\mbox{\Hypertarget{class_edit_acb35a040475a06650a0edba0e0c4eeb3}\label{class_edit_acb35a040475a06650a0edba0e0c4eeb3}} 
+wx\+Spin\+Ctrl $\ast$ {\bfseries year\+Up\+Down}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A derived class of wx\+Frame that allows the user to edit their account information and password. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_edit_a08ac6e1ab34fba378422e0d7d6fee611}\label{class_edit_a08ac6e1ab34fba378422e0d7d6fee611}} 
+\index{Edit@{Edit}!Edit@{Edit}}
+\index{Edit@{Edit}!Edit@{Edit}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily Edit\+::\+Edit (\begin{DoxyParamCaption}\item[{const wx\+String \&}]{title,  }\item[{const wx\+Point \&}]{pos,  }\item[{const wx\+Size \&}]{size,  }\item[{std\+::string}]{User }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_edit}{Edit}} class. 
+
+Constructs an \mbox{\hyperlink{class_edit}{Edit}} object with a user interface for users to edit their account information and passwords.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & A string representing the title of the frame. \\
+\hline
+{\em pos} & A wx\+Point object representing the position of the frame. \\
+\hline
+{\em size} & A wx\+Size object representing the size of the frame. \\
+\hline
+{\em user} & A string representing the username of the current user.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the window.\\
+\hline
+{\em pos} & The initial position of the window.\\
+\hline
+{\em size} & The initial size of the window.\\
+\hline
+{\em User} & The username of the current user. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_edit_a92594a8483a46db25ee8bc5306035959}\label{class_edit_a92594a8483a46db25ee8bc5306035959}} 
+\index{Edit@{Edit}!pick@{pick}}
+\index{pick@{pick}!Edit@{Edit}}
+\doxysubsubsection{\texorpdfstring{pick()}{pick()}}
+{\footnotesize\ttfamily void Edit\+::pick (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Event handler function for the change\+Option listbox. 
+
+Hides all panels and shows the selected panel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & A reference to the wx\+Command\+Event object that called this function.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & The event triggered by selecting a new option from the dropdown menu. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_edit_ade279d9190d4be7f8ca4cb76c9942924}\label{class_edit_ade279d9190d4be7f8ca4cb76c9942924}} 
+\index{Edit@{Edit}!saveInfoClicked@{saveInfoClicked}}
+\index{saveInfoClicked@{saveInfoClicked}!Edit@{Edit}}
+\doxysubsubsection{\texorpdfstring{saveInfoClicked()}{saveInfoClicked()}}
+{\footnotesize\ttfamily void Edit\+::save\+Info\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Event handler function for the save\+Info button. 
+
+Saves the user\textquotesingle{}s updated information to the system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & A reference to the wx\+Command\+Event object that called this function.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & The event triggered by the \char`\"{}save info\char`\"{} button. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_edit_ab34a35123cd58bc926c5d4bf8daf594b}\label{class_edit_ab34a35123cd58bc926c5d4bf8daf594b}} 
+\index{Edit@{Edit}!savePassClicked@{savePassClicked}}
+\index{savePassClicked@{savePassClicked}!Edit@{Edit}}
+\doxysubsubsection{\texorpdfstring{savePassClicked()}{savePassClicked()}}
+{\footnotesize\ttfamily void Edit\+::save\+Pass\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Event handler function for the save\+Pass button. 
+
+Saves the user\textquotesingle{}s updated password to the system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & A reference to the wx\+Command\+Event object that called this function.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & The event triggered by the \char`\"{}save password\char`\"{} button. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_edit_8h}{Edit.\+h}}\item 
+\mbox{\hyperlink{_edit_8cpp}{Edit.\+cpp}}\end{DoxyCompactItemize}

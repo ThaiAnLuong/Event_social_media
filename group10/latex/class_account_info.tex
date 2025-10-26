@@ -1,0 +1,246 @@
+\hypertarget{class_account_info}{}\doxysection{Account\+Info Class Reference}
+\label{class_account_info}\index{AccountInfo@{AccountInfo}}
+Inheritance diagram for Account\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_account_info}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_account_info_a779996f914689c72e34fd012ec967a7b}\label{class_account_info_a779996f914689c72e34fd012ec967a7b}} 
+void {\bfseries but\+Edit\+Clicked} (wx\+Command\+Event \&evt)
+\item 
+\mbox{\Hypertarget{class_account_info_af74aacbe9b944f5bc1598225f78d011a}\label{class_account_info_af74aacbe9b944f5bc1598225f78d011a}} 
+{\bfseries Account\+Info} (const wx\+String \&title, const wx\+Point \&pos, const wx\+Size \&size, std\+::string searched\+User, std\+::string cur\+User, int is\+User)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_account_info_a8b4d253504a2859afea11d24ed193150}{clicked\+Follow}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em add follow status of the searched user to the database \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_account_info_a042078781e59e8c0ace3a873683b5fc1}{clicked\+Unfollow}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em remove follow status searched user form data base \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_account_info_a853b9d826ded94a48a600696f51694cf}{pick\+Event}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em show the detail of event when select in listbox \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_account_info_a1370569fd82b23ed2e1712bcf8f6fbc2}{set\+Up\+Frame\+Profile}} ()
+\begin{DoxyCompactList}\small\item\em This function sets up the profile frame for the current user by retrieving their information from the database and displaying it using wx\+Static\+Text widgets. The function uses a JSON object to store the retrieved data and then extracts the required fields such as first name, last name, and date of birth. It then creates new wx\+Static\+Text widgets to display this information and sets the appropriate labels. Overall, this function seems well-\/organized and clear in its implementation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_account_info_ab1cb25786aee6c5888e4619532110c54}{set\+Up\+Frame\+Dif\+Profile}} (std\+::string find\+Username)
+\begin{DoxyCompactList}\small\item\em The set\+Up\+Frame\+Dif\+Profile function sets up the profile display for a different user that is being viewed. It does so by checking if the current user is following the searched user, and creating a button to either follow or unfollow them based on the result. It then retrieves and displays the basic user information for the searched user using JSON data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_account_info_a30877542f127ec72f1cbceb09e65d7e0}{close\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em close the event info panel and show the list box of event \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_info_ae8738929391d2fadd098f3fe11ee25ac}\label{class_account_info_ae8738929391d2fadd098f3fe11ee25ac}} 
+void {\bfseries get\+Detail} (std\+::string event\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_account_info_a6c484d1f3213d36de16047ce01ddc94a}\label{class_account_info_a6c484d1f3213d36de16047ce01ddc94a}} 
+int {\bfseries sig}
+\item 
+\mbox{\Hypertarget{class_account_info_a21699cd0d42a914b64ec416da0cb6187}\label{class_account_info_a21699cd0d42a914b64ec416da0cb6187}} 
+wx\+Static\+Text $\ast$ {\bfseries u\+Name}
+\item 
+\mbox{\Hypertarget{class_account_info_a70ed872b4ad50f5cd576580a0b13490d}\label{class_account_info_a70ed872b4ad50f5cd576580a0b13490d}} 
+User\+DBHandler $\ast$ {\bfseries handler}
+\item 
+\mbox{\Hypertarget{class_account_info_ab9514ab440acc59afd449ddb880aaff9}\label{class_account_info_ab9514ab440acc59afd449ddb880aaff9}} 
+Event\+DBHandler $\ast$ {\bfseries e\+Handler}
+\item 
+\mbox{\Hypertarget{class_account_info_a53939539c2dabe1bbfabbc31675af170}\label{class_account_info_a53939539c2dabe1bbfabbc31675af170}} 
+std\+::vector$<$ nlohmann\+::json $>$ {\bfseries data}
+\item 
+\mbox{\Hypertarget{class_account_info_a29fdf64e8a18997087f99a32aaebbe34}\label{class_account_info_a29fdf64e8a18997087f99a32aaebbe34}} 
+std\+::string {\bfseries searched}
+\item 
+\mbox{\Hypertarget{class_account_info_a4afd4aad615a06b0eb7197d2cf777c20}\label{class_account_info_a4afd4aad615a06b0eb7197d2cf777c20}} 
+std\+::string {\bfseries cur\+User}
+\item 
+\mbox{\Hypertarget{class_account_info_afbffcce6951b07b154ded085d744e6ab}\label{class_account_info_afbffcce6951b07b154ded085d744e6ab}} 
+std\+::string {\bfseries searched\+User}
+\item 
+\mbox{\Hypertarget{class_account_info_a72e7e023d0f6f99572d1c19269568a7f}\label{class_account_info_a72e7e023d0f6f99572d1c19269568a7f}} 
+wx\+Panel $\ast$ {\bfseries main\+Panel}
+\item 
+\mbox{\Hypertarget{class_account_info_acd6a69ed9bfd1d62d3cbcc531880d3eb}\label{class_account_info_acd6a69ed9bfd1d62d3cbcc531880d3eb}} 
+wx\+Panel $\ast$ {\bfseries display\+Panel}
+\item 
+\mbox{\Hypertarget{class_account_info_a94fe68da66e677f212a79336a3f1a118}\label{class_account_info_a94fe68da66e677f212a79336a3f1a118}} 
+wx\+Button $\ast$ {\bfseries close}
+\item 
+\mbox{\Hypertarget{class_account_info_a032690d4067fbb345d8cdf8d62d5405d}\label{class_account_info_a032690d4067fbb345d8cdf8d62d5405d}} 
+wx\+Panel $\ast$ {\bfseries info\+Panel}
+\item 
+\mbox{\Hypertarget{class_account_info_ac23dad1454fb686c93122a219c349ea3}\label{class_account_info_ac23dad1454fb686c93122a219c349ea3}} 
+wx\+Panel $\ast$ {\bfseries pic\+Panel}
+\item 
+\mbox{\Hypertarget{class_account_info_a96e74fe2c7dfad62dbcc77987a6c324d}\label{class_account_info_a96e74fe2c7dfad62dbcc77987a6c324d}} 
+wx\+Panel $\ast$ {\bfseries test\+Panel}
+\item 
+\mbox{\Hypertarget{class_account_info_ae91ac33c40732dfb1a356df146236f6a}\label{class_account_info_ae91ac33c40732dfb1a356df146236f6a}} 
+wx\+Button $\ast$ {\bfseries but\+Follow}
+\item 
+\mbox{\Hypertarget{class_account_info_adc8509a55b6fb3ef60c4fadf91c60c32}\label{class_account_info_adc8509a55b6fb3ef60c4fadf91c60c32}} 
+wx\+Static\+Text $\ast$ {\bfseries u\+Name\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_a65e5f52ca85204750b0ebe03c0b59aa2}\label{class_account_info_a65e5f52ca85204750b0ebe03c0b59aa2}} 
+wx\+Static\+Text $\ast$ {\bfseries n\+Name\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_a271241ba07ee70c977164e243925fead}\label{class_account_info_a271241ba07ee70c977164e243925fead}} 
+wx\+Static\+Text $\ast$ {\bfseries n\+Name\+Show}
+\item 
+\mbox{\Hypertarget{class_account_info_a8ba0e4de725d7c90daf25c44f68e3ddd}\label{class_account_info_a8ba0e4de725d7c90daf25c44f68e3ddd}} 
+wx\+Static\+Text $\ast$ {\bfseries date\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_ac885ba2e9a05bc1002dad8ad6d1e948e}\label{class_account_info_ac885ba2e9a05bc1002dad8ad6d1e948e}} 
+wx\+Static\+Text $\ast$ {\bfseries date\+Show}
+\item 
+\mbox{\Hypertarget{class_account_info_a6c691c5db108fa8a8842a391eaa7d88b}\label{class_account_info_a6c691c5db108fa8a8842a391eaa7d88b}} 
+wx\+Static\+Text $\ast$ {\bfseries loc\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_a8cfe5336a850fa6c644da3527e706ee2}\label{class_account_info_a8cfe5336a850fa6c644da3527e706ee2}} 
+wx\+Static\+Text $\ast$ {\bfseries loc\+Show}
+\item 
+\mbox{\Hypertarget{class_account_info_aae7ab95cfd3b3fc24d5868b7f2fcfb9d}\label{class_account_info_aae7ab95cfd3b3fc24d5868b7f2fcfb9d}} 
+wx\+Array\+String {\bfseries evt\+List}
+\item 
+\mbox{\Hypertarget{class_account_info_ae9b2507fcd2c8f019bf442078e0e2322}\label{class_account_info_ae9b2507fcd2c8f019bf442078e0e2322}} 
+wx\+List\+Box $\ast$ {\bfseries created\+Evt}
+\item 
+\mbox{\Hypertarget{class_account_info_aa947efddefe4717dc265b44840466da3}\label{class_account_info_aa947efddefe4717dc265b44840466da3}} 
+wx\+Static\+Text $\ast$ {\bfseries evt\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_a3c1205f7d7064df4dc9e2f4bc32f352e}\label{class_account_info_a3c1205f7d7064df4dc9e2f4bc32f352e}} 
+wx\+Static\+Text $\ast$ {\bfseries host\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_a64e2423a385303b80585adb39c73fdbb}\label{class_account_info_a64e2423a385303b80585adb39c73fdbb}} 
+wx\+Static\+Text $\ast$ {\bfseries addr\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_a6035baaa75543c085b1293e55688b217}\label{class_account_info_a6035baaa75543c085b1293e55688b217}} 
+wx\+Static\+Text $\ast$ {\bfseries price\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_ac82baf6d4b47cfea86c2f9a15d2a2067}\label{class_account_info_ac82baf6d4b47cfea86c2f9a15d2a2067}} 
+wx\+Static\+Text $\ast$ {\bfseries start\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_ac05da03deed70ff04e137181997ca6f8}\label{class_account_info_ac05da03deed70ff04e137181997ca6f8}} 
+wx\+Static\+Text $\ast$ {\bfseries time\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_ae1b0d25c35cf5f3f8596e969aa2e9342}\label{class_account_info_ae1b0d25c35cf5f3f8596e969aa2e9342}} 
+wx\+Static\+Text $\ast$ {\bfseries des\+Text}
+\item 
+\mbox{\Hypertarget{class_account_info_a6e1d59958431c3927ca996de45e1f7eb}\label{class_account_info_a6e1d59958431c3927ca996de45e1f7eb}} 
+wx\+Static\+Text $\ast$ {\bfseries event}
+\item 
+\mbox{\Hypertarget{class_account_info_a2865c220f8d40f74c49e70202f8491ac}\label{class_account_info_a2865c220f8d40f74c49e70202f8491ac}} 
+wx\+Static\+Text $\ast$ {\bfseries host}
+\item 
+\mbox{\Hypertarget{class_account_info_a953729e1048fb573756841d0a00acbd2}\label{class_account_info_a953729e1048fb573756841d0a00acbd2}} 
+wx\+Static\+Text $\ast$ {\bfseries addr}
+\item 
+\mbox{\Hypertarget{class_account_info_a5ecc78b6bd05ba027e1ea18d039bf2bf}\label{class_account_info_a5ecc78b6bd05ba027e1ea18d039bf2bf}} 
+wx\+Static\+Text $\ast$ {\bfseries price}
+\item 
+\mbox{\Hypertarget{class_account_info_a5a5cb4de4729febaff2e9a768ca345d3}\label{class_account_info_a5a5cb4de4729febaff2e9a768ca345d3}} 
+wx\+Static\+Text $\ast$ {\bfseries date}
+\item 
+\mbox{\Hypertarget{class_account_info_a367a48fc416dd89470df02fc5ce8b324}\label{class_account_info_a367a48fc416dd89470df02fc5ce8b324}} 
+wx\+Static\+Text $\ast$ {\bfseries time}
+\item 
+\mbox{\Hypertarget{class_account_info_a99b696a9ddc9902fa86c5b3f43d3584c}\label{class_account_info_a99b696a9ddc9902fa86c5b3f43d3584c}} 
+wx\+Static\+Text $\ast$ {\bfseries des}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_account_info_a8b4d253504a2859afea11d24ed193150}\label{class_account_info_a8b4d253504a2859afea11d24ed193150}} 
+\index{AccountInfo@{AccountInfo}!clickedFollow@{clickedFollow}}
+\index{clickedFollow@{clickedFollow}!AccountInfo@{AccountInfo}}
+\doxysubsubsection{\texorpdfstring{clickedFollow()}{clickedFollow()}}
+{\footnotesize\ttfamily void Account\+Info\+::clicked\+Follow (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+add follow status of the searched user to the database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_account_info_a042078781e59e8c0ace3a873683b5fc1}\label{class_account_info_a042078781e59e8c0ace3a873683b5fc1}} 
+\index{AccountInfo@{AccountInfo}!clickedUnfollow@{clickedUnfollow}}
+\index{clickedUnfollow@{clickedUnfollow}!AccountInfo@{AccountInfo}}
+\doxysubsubsection{\texorpdfstring{clickedUnfollow()}{clickedUnfollow()}}
+{\footnotesize\ttfamily void Account\+Info\+::clicked\+Unfollow (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+remove follow status searched user form data base 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_account_info_a30877542f127ec72f1cbceb09e65d7e0}\label{class_account_info_a30877542f127ec72f1cbceb09e65d7e0}} 
+\index{AccountInfo@{AccountInfo}!closeClicked@{closeClicked}}
+\index{closeClicked@{closeClicked}!AccountInfo@{AccountInfo}}
+\doxysubsubsection{\texorpdfstring{closeClicked()}{closeClicked()}}
+{\footnotesize\ttfamily void Account\+Info\+::close\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+close the event info panel and show the list box of event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_account_info_a853b9d826ded94a48a600696f51694cf}\label{class_account_info_a853b9d826ded94a48a600696f51694cf}} 
+\index{AccountInfo@{AccountInfo}!pickEvent@{pickEvent}}
+\index{pickEvent@{pickEvent}!AccountInfo@{AccountInfo}}
+\doxysubsubsection{\texorpdfstring{pickEvent()}{pickEvent()}}
+{\footnotesize\ttfamily void Account\+Info\+::pick\+Event (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+show the detail of event when select in listbox 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_account_info_ab1cb25786aee6c5888e4619532110c54}\label{class_account_info_ab1cb25786aee6c5888e4619532110c54}} 
+\index{AccountInfo@{AccountInfo}!setUpFrameDifProfile@{setUpFrameDifProfile}}
+\index{setUpFrameDifProfile@{setUpFrameDifProfile}!AccountInfo@{AccountInfo}}
+\doxysubsubsection{\texorpdfstring{setUpFrameDifProfile()}{setUpFrameDifProfile()}}
+{\footnotesize\ttfamily void Account\+Info\+::set\+Up\+Frame\+Dif\+Profile (\begin{DoxyParamCaption}\item[{std\+::string}]{find\+Username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The set\+Up\+Frame\+Dif\+Profile function sets up the profile display for a different user that is being viewed. It does so by checking if the current user is following the searched user, and creating a button to either follow or unfollow them based on the result. It then retrieves and displays the basic user information for the searched user using JSON data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em find\+Username} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_account_info_a1370569fd82b23ed2e1712bcf8f6fbc2}\label{class_account_info_a1370569fd82b23ed2e1712bcf8f6fbc2}} 
+\index{AccountInfo@{AccountInfo}!setUpFrameProfile@{setUpFrameProfile}}
+\index{setUpFrameProfile@{setUpFrameProfile}!AccountInfo@{AccountInfo}}
+\doxysubsubsection{\texorpdfstring{setUpFrameProfile()}{setUpFrameProfile()}}
+{\footnotesize\ttfamily void Account\+Info\+::set\+Up\+Frame\+Profile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This function sets up the profile frame for the current user by retrieving their information from the database and displaying it using wx\+Static\+Text widgets. The function uses a JSON object to store the retrieved data and then extracts the required fields such as first name, last name, and date of birth. It then creates new wx\+Static\+Text widgets to display this information and sets the appropriate labels. Overall, this function seems well-\/organized and clear in its implementation. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_account_info_8h}{Account\+Info.\+h}}\item 
+\mbox{\hyperlink{_account_info_8cpp}{Account\+Info.\+cpp}}\end{DoxyCompactItemize}

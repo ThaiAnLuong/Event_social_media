@@ -1,0 +1,38 @@
+\hypertarget{userdbhandler_8h_source}{}\doxysection{userdbhandler.\+h}
+\mbox{\hyperlink{userdbhandler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}database\_handler.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}single\_include/nlohmann/json.hpp"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ USERBHANDLER\_CLASS\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ USERBHANDLER\_CLASS\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_user_d_b_handler}{UserDBHandler}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_handler}{Handler}}\{\ \ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_user_d_b_handler_a8a5692070759835640016930cddb29fb}{getUserId}}(std::string);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_user_d_b_handler}{UserDBHandler}}(std::string,\ std::string);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_d_b_handler_a08c8ba9816448744ca553ecf5f86b80c}{addUser}}(std::string,\ std::string,\ std::string,\ std::string,\ \textcolor{keywordtype}{int},\ std::string,\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ nlohmann::json\ \mbox{\hyperlink{class_user_d_b_handler_a1f033aa1d69888afc272736c686ae964}{getUser}}(std::string);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_d_b_handler_add36159d9a8c9581662ee19e659ae57f}{deleteUser}}(std::string);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_d_b_handler_a9b544ce979ffc65bb18a7456ff5d69d1}{follow}}(std::string,\ std::string);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_d_b_handler_a2f2bcfe15b42693d91686d7159a8e1db}{unfollow}}(std::string,\ std::string);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_user_d_b_handler_a58cc84364346c88da67f7f2abac63e18}{isFollowing}}(std::string,\ std::string);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_d_b_handler_aedf5e8203defbbc19926e538cc9c45f5}{changePassword}}(std::string,\ std::string);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_d_b_handler_a202dfad23ccb062a74b61d08f189896e}{changeFirstName}}(std::string,\ std::string);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_d_b_handler_aece1071ca3e83b4f6218d35fe6eaa02d}{changeLastName}}(std::string,\ std::string);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_d_b_handler_a9ff4b591f5b17fa716b8eb44ef3365c6}{changeBirthday}}(std::string,\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_user_d_b_handler_abdb68b1cff1bcd3c956919b3d9cef21b}{getFollowing}}(std::string);}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

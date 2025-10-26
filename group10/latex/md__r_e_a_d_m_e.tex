@@ -1,0 +1,42 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Introduction}\label{md__r_e_a_d_m_e_autotoc_md1}
+This project is an Event and Party Planning application. It was created to fill a growing need, as the popular opinion of other platforms such as Facebook and Twitter are in decline and people are in need of an app to facilitate the easy coordination of events. Our app titled EVNT allows users to login to their individual accounts and then create events which are accessible to other users via our database. Our users can search and browse other users\textquotesingle{} events to find events uploaded to the site. The user can view their own as well as other users\textquotesingle{} profiles. Furthermore they can search for specific users and follow (or unfollow) them. They can edit their personal information and view details about events they create.
+
+While we originally intended for much more functionality for our app, we decided to scale the design back to better suit what was feasible for us to create with a good standard of quaity. This meant the removal of 3 features we had intended, the Map system (To visually display events in your area for easy browsing), the private and public typing of parties (To allow only certain users access to specific events), and finally the automated deletion of events (after their set end time has passed). Despite not being able to add these features (cut back for time), we still planned our app and designed it in a way that these features would be easily extensible if we had more time.
+
+The most important feature which we needed to cut close to the end was the invites system, because of this we\textquotesingle{}ve left in several sections of code and the UML sections for it. This system would\textquotesingle{}ve used the database and we had created as well as handlers and several functions. We have left those sections in despite their non-\/operational nature for potential extensibility and expandability in the future and to show the progress we had towards those sections of our inital plans and user stories.
+
+Our final product represents over a month of work and collaboration and we hope you appricate the effort and ideas that we have put into it.
+
+Thanks,
+
+-\/Group 10 (John Krupa, Yash Gupta, Thai An-\/\+Loung, Andrew Kwan, and Will Reil) \hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{Installation and Running Notes}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyEnumerate}
+\item On a Linux system (our system was created on Linux Ubuntu 22.\+04.\+2), install the following 6 libraries with the following commands\+:
+\begin{DoxyItemize}
+\item {\ttfamily sudo apt install cmake}
+\item {\ttfamily sudo apt install libgtk-\/3-\/dev}
+\item {\ttfamily sudo apt install git}
+\item {\ttfamily sudo apt install libwxbase3.\+0-\/dev}
+\item {\ttfamily sudo apt install libwxgtk3.\+0-\/gtk3-\/dev}
+\item {\ttfamily sudo apt install curl}
+\end{DoxyItemize}
+\item Download the zip file found on OWL and unzip it
+\item Go into the {\ttfamily group10} folder and {\ttfamily unzip wx\+Widgets-\/3.\+2.\+2.\+1.\+tar.\+bz2}
+\item Go into the terminal and {\ttfamily cd} into {\ttfamily group10}
+\item {\ttfamily cd} into {\ttfamily wx\+Widgets-\/3.\+2.\+2.\+1}
+\item Type {\ttfamily ./configure}
+\item Type {\ttfamily make} (use the option {\ttfamily -\/j \+\_\+\+\_\+} where the {\ttfamily \+\_\+} is any number of threads you want to use to make this go faster). This step will take a while
+\item {\ttfamily cd} into the parent folder (i.\+e. {\ttfamily cd ..})
+\item Type {\ttfamily make} to compile the project
+\item Once finished, type {\ttfamily ./a.out} to run the program 
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Other Notes}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Make sure you CTRL-\/C after closing the program if the program has not already terminated before you run it again
+\item To view and modify the information on our database, we created an additional account, so go to \href{back4app.com}{\texttt{ Back4\+App }} and login with the following credentials, and once done, go into \char`\"{}\+My Apps\char`\"{}, then under the \char`\"{}\+EVNT\char`\"{} app, click the \char`\"{}\+Dashboard\char`\"{} button
+\begin{DoxyItemize}
+\item Email\+: \href{mailto:bllaaze4@gmail.com}{\texttt{ bllaaze4@gmail.\+com}}
+\item Password\+: password 
+\end{DoxyItemize}
+\end{DoxyItemize}

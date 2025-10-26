@@ -1,0 +1,329 @@
+\hypertarget{class_user_d_b_handler}{}\doxysection{User\+DBHandler Class Reference}
+\label{class_user_d_b_handler}\index{UserDBHandler@{UserDBHandler}}
+Inheritance diagram for User\+DBHandler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user_d_b_handler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_d_b_handler_a856906c93dc8c604d7839ed3a6a9bbed}{User\+DBHandler}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em defines each of the methods in user\+DBHandler.\+cpp file with parameters \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_d_b_handler_a08c8ba9816448744ca553ecf5f86b80c}{add\+User}} (std\+::string, std\+::string, std\+::string, std\+::string, int, std\+::string, int, int, int)
+\begin{DoxyCompactList}\small\item\em Adds new user to with user information to database. \end{DoxyCompactList}\item 
+nlohmann\+::json \mbox{\hyperlink{class_user_d_b_handler_a1f033aa1d69888afc272736c686ae964}{get\+User}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Used to get user details in json format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_d_b_handler_add36159d9a8c9581662ee19e659ae57f}{delete\+User}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em deletes user from database \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_d_b_handler_a9b544ce979ffc65bb18a7456ff5d69d1}{follow}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Allows user to follow another user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_d_b_handler_a2f2bcfe15b42693d91686d7159a8e1db}{unfollow}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em ALlows user to unfollow another previously followed user. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_d_b_handler_a58cc84364346c88da67f7f2abac63e18}{is\+Following}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Checks if current user is following another user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_d_b_handler_aedf5e8203defbbc19926e538cc9c45f5}{change\+Password}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Allows user to change their account password. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_d_b_handler_a202dfad23ccb062a74b61d08f189896e}{change\+First\+Name}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Allows user to change thier username. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_d_b_handler_aece1071ca3e83b4f6218d35fe6eaa02d}{change\+Last\+Name}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em ALlows user to change thier last name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_d_b_handler_a9ff4b591f5b17fa716b8eb44ef3365c6}{change\+Birthday}} (std\+::string, int, int, int)
+\begin{DoxyCompactList}\small\item\em ALlows user to change their entered birth date. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_user_d_b_handler_abdb68b1cff1bcd3c956919b3d9cef21b}{get\+Following}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Used to retrieve a list of friends of current user in json format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_handler}{Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_handler_a816a15102e240e4c7baa66f591d49540}\label{class_handler_a816a15102e240e4c7baa66f591d49540}} 
+{\bfseries Handler} (std\+::string, std\+::string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_user_d_b_handler_a8a5692070759835640016930cddb29fb}{get\+User\+Id}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em defines constructor parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_handler}{Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_handler_a766cc91bb0f825ce94c0de0d592a22e0}\label{class_handler_a766cc91bb0f825ce94c0de0d592a22e0}} 
+void {\bfseries do\+Request} ()
+\item 
+\mbox{\Hypertarget{class_handler_a978fe1e5cbcaefccbee1394d1abbff41}\label{class_handler_a978fe1e5cbcaefccbee1394d1abbff41}} 
+void {\bfseries request\+Setup} (std\+::string, std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{class_handler_a42d582802f9f2f9e1fae89cd4af3e58a}\label{class_handler_a42d582802f9f2f9e1fae89cd4af3e58a}} 
+void {\bfseries erase\+Files} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_handler}{Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_handler_ae0a9ebf3ecfc710745286a01cc55b1e2}\label{class_handler_ae0a9ebf3ecfc710745286a01cc55b1e2}} 
+std\+::string {\bfseries APIKey}
+\item 
+\mbox{\Hypertarget{class_handler_ae24b8d2b7ef31f4a8538abade8aa795c}\label{class_handler_ae24b8d2b7ef31f4a8538abade8aa795c}} 
+std\+::string {\bfseries app\+Id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_user_d_b_handler_a856906c93dc8c604d7839ed3a6a9bbed}\label{class_user_d_b_handler_a856906c93dc8c604d7839ed3a6a9bbed}} 
+\index{UserDBHandler@{UserDBHandler}!UserDBHandler@{UserDBHandler}}
+\index{UserDBHandler@{UserDBHandler}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{UserDBHandler()}{UserDBHandler()}}
+{\footnotesize\ttfamily User\+DBHandler\+::\+User\+DBHandler (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+defines each of the methods in user\+DBHandler.\+cpp file with parameters 
+
+Construct connects to database handler to get individual user informatio.
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Id} & \\
+\hline
+{\em APIKey} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_d_b_handler_a08c8ba9816448744ca553ecf5f86b80c}\label{class_user_d_b_handler_a08c8ba9816448744ca553ecf5f86b80c}} 
+\index{UserDBHandler@{UserDBHandler}!addUser@{addUser}}
+\index{addUser@{addUser}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily void User\+DBHandler\+::add\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{,  }\item[{std\+::string}]{,  }\item[{std\+::string}]{,  }\item[{int}]{,  }\item[{std\+::string}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Adds new user to with user information to database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & \\
+\hline
+{\em lname} & \\
+\hline
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+{\em security\+Question} & \\
+\hline
+{\em answer} & \\
+\hline
+{\em bday} & \\
+\hline
+{\em bmonth} & \\
+\hline
+{\em byear} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_user_d_b_handler_a9ff4b591f5b17fa716b8eb44ef3365c6}\label{class_user_d_b_handler_a9ff4b591f5b17fa716b8eb44ef3365c6}} 
+\index{UserDBHandler@{UserDBHandler}!changeBirthday@{changeBirthday}}
+\index{changeBirthday@{changeBirthday}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{changeBirthday()}{changeBirthday()}}
+{\footnotesize\ttfamily void User\+DBHandler\+::change\+Birthday (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+ALlows user to change their entered birth date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur\+User} & \\
+\hline
+{\em bday} & \\
+\hline
+{\em bmonth} & \\
+\hline
+{\em byear} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_user_d_b_handler_a202dfad23ccb062a74b61d08f189896e}\label{class_user_d_b_handler_a202dfad23ccb062a74b61d08f189896e}} 
+\index{UserDBHandler@{UserDBHandler}!changeFirstName@{changeFirstName}}
+\index{changeFirstName@{changeFirstName}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{changeFirstName()}{changeFirstName()}}
+{\footnotesize\ttfamily void User\+DBHandler\+::change\+First\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Allows user to change thier username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur\+User} & \\
+\hline
+{\em new\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_user_d_b_handler_aece1071ca3e83b4f6218d35fe6eaa02d}\label{class_user_d_b_handler_aece1071ca3e83b4f6218d35fe6eaa02d}} 
+\index{UserDBHandler@{UserDBHandler}!changeLastName@{changeLastName}}
+\index{changeLastName@{changeLastName}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{changeLastName()}{changeLastName()}}
+{\footnotesize\ttfamily void User\+DBHandler\+::change\+Last\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+ALlows user to change thier last name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur\+User} & \\
+\hline
+{\em new\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_user_d_b_handler_aedf5e8203defbbc19926e538cc9c45f5}\label{class_user_d_b_handler_aedf5e8203defbbc19926e538cc9c45f5}} 
+\index{UserDBHandler@{UserDBHandler}!changePassword@{changePassword}}
+\index{changePassword@{changePassword}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{changePassword()}{changePassword()}}
+{\footnotesize\ttfamily void User\+DBHandler\+::change\+Password (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Allows user to change their account password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur\+User} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_user_d_b_handler_add36159d9a8c9581662ee19e659ae57f}\label{class_user_d_b_handler_add36159d9a8c9581662ee19e659ae57f}} 
+\index{UserDBHandler@{UserDBHandler}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily void User\+DBHandler\+::delete\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+deletes user from database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_user_d_b_handler_a9b544ce979ffc65bb18a7456ff5d69d1}\label{class_user_d_b_handler_a9b544ce979ffc65bb18a7456ff5d69d1}} 
+\index{UserDBHandler@{UserDBHandler}!follow@{follow}}
+\index{follow@{follow}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{follow()}{follow()}}
+{\footnotesize\ttfamily void User\+DBHandler\+::follow (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Allows user to follow another user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur\+User} & \\
+\hline
+{\em to\+Add} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_user_d_b_handler_abdb68b1cff1bcd3c956919b3d9cef21b}\label{class_user_d_b_handler_abdb68b1cff1bcd3c956919b3d9cef21b}} 
+\index{UserDBHandler@{UserDBHandler}!getFollowing@{getFollowing}}
+\index{getFollowing@{getFollowing}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{getFollowing()}{getFollowing()}}
+{\footnotesize\ttfamily vector$<$ string $>$ User\+DBHandler\+::get\+Following (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Used to retrieve a list of friends of current user in json format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur\+User} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$string$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_d_b_handler_a1f033aa1d69888afc272736c686ae964}\label{class_user_d_b_handler_a1f033aa1d69888afc272736c686ae964}} 
+\index{UserDBHandler@{UserDBHandler}!getUser@{getUser}}
+\index{getUser@{getUser}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily json User\+DBHandler\+::get\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Used to get user details in json format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_d_b_handler_a8a5692070759835640016930cddb29fb}\label{class_user_d_b_handler_a8a5692070759835640016930cddb29fb}} 
+\index{UserDBHandler@{UserDBHandler}!getUserId@{getUserId}}
+\index{getUserId@{getUserId}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{getUserId()}{getUserId()}}
+{\footnotesize\ttfamily string User\+DBHandler\+::get\+User\+Id (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+defines constructor parameters 
+
+gets object id of specified user
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_d_b_handler_a58cc84364346c88da67f7f2abac63e18}\label{class_user_d_b_handler_a58cc84364346c88da67f7f2abac63e18}} 
+\index{UserDBHandler@{UserDBHandler}!isFollowing@{isFollowing}}
+\index{isFollowing@{isFollowing}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{isFollowing()}{isFollowing()}}
+{\footnotesize\ttfamily bool User\+DBHandler\+::is\+Following (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Checks if current user is following another user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur\+User} & \\
+\hline
+{\em other\+User} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_d_b_handler_a2f2bcfe15b42693d91686d7159a8e1db}\label{class_user_d_b_handler_a2f2bcfe15b42693d91686d7159a8e1db}} 
+\index{UserDBHandler@{UserDBHandler}!unfollow@{unfollow}}
+\index{unfollow@{unfollow}!UserDBHandler@{UserDBHandler}}
+\doxysubsubsection{\texorpdfstring{unfollow()}{unfollow()}}
+{\footnotesize\ttfamily void User\+DBHandler\+::unfollow (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+ALlows user to unfollow another previously followed user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur\+User} & \\
+\hline
+{\em to\+Remove} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{userdbhandler_8h}{userdbhandler.\+h}}\item 
+userdbhandler.\+cpp\end{DoxyCompactItemize}

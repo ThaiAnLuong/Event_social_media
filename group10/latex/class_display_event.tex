@@ -1,0 +1,95 @@
+\hypertarget{class_display_event}{}\doxysection{Display\+Event Class Reference}
+\label{class_display_event}\index{DisplayEvent@{DisplayEvent}}
+
+
+Defines constructor parameters.  
+
+
+
+
+{\ttfamily \#include $<$Display\+Event.\+h$>$}
+
+Inheritance diagram for Display\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_display_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_display_event_a7c5592018f9bd9451143bfbe77396603}{Display\+Event}} (const wx\+String \&title, const wx\+Point \&pos, const wx\+Size \&size, std\+::string cur\+User)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_display_event}{Display\+Event}} constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_display_event_aeb1946f233a7c15e308958056e7cf09a}\label{class_display_event_aeb1946f233a7c15e308958056e7cf09a}} 
+User\+DBHandler $\ast$ {\bfseries user\+Handler}
+\begin{DoxyCompactList}\small\item\em Used to connect to User\+DBHandler and Event\+DBHandler to access database. \end{DoxyCompactList}\item 
+Event\+DBHandler $\ast$ \mbox{\hyperlink{class_display_event_a6ae622183d8af0b41115e1257050cb7e}{event\+Handler}}
+\item 
+std\+::string \mbox{\hyperlink{class_display_event_a682808e2b607c660c0f2fb98c87d6f03}{user}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines constructor parameters. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_display_event_a7c5592018f9bd9451143bfbe77396603}\label{class_display_event_a7c5592018f9bd9451143bfbe77396603}} 
+\index{DisplayEvent@{DisplayEvent}!DisplayEvent@{DisplayEvent}}
+\index{DisplayEvent@{DisplayEvent}!DisplayEvent@{DisplayEvent}}
+\doxysubsubsection{\texorpdfstring{DisplayEvent()}{DisplayEvent()}}
+{\footnotesize\ttfamily Display\+Event\+::\+Display\+Event (\begin{DoxyParamCaption}\item[{const wx\+String \&}]{title,  }\item[{const wx\+Point \&}]{pos,  }\item[{const wx\+Size \&}]{size,  }\item[{std\+::string}]{cur\+User }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_display_event}{Display\+Event}} constructor. 
+
+Constructor for the \mbox{\hyperlink{class_display_event}{Display\+Event}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the dialog. \\
+\hline
+{\em pos} & The position of the dialog. \\
+\hline
+{\em size} & The size of the dialog. \\
+\hline
+{\em cur\+User} & The current user of the application.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the frame.\\
+\hline
+{\em pos} & The position of the frame.\\
+\hline
+{\em size} & The size of the frame.\\
+\hline
+{\em cur\+User} & The current user. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_display_event_a6ae622183d8af0b41115e1257050cb7e}\label{class_display_event_a6ae622183d8af0b41115e1257050cb7e}} 
+\index{DisplayEvent@{DisplayEvent}!eventHandler@{eventHandler}}
+\index{eventHandler@{eventHandler}!DisplayEvent@{DisplayEvent}}
+\doxysubsubsection{\texorpdfstring{eventHandler}{eventHandler}}
+{\footnotesize\ttfamily Event\+DBHandler$\ast$ Display\+Event\+::event\+Handler\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to an instance of User\+DBHandler. \mbox{\Hypertarget{class_display_event_a682808e2b607c660c0f2fb98c87d6f03}\label{class_display_event_a682808e2b607c660c0f2fb98c87d6f03}} 
+\index{DisplayEvent@{DisplayEvent}!user@{user}}
+\index{user@{user}!DisplayEvent@{DisplayEvent}}
+\doxysubsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily std\+::string Display\+Event\+::user\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to an instance of Event\+DBHandler. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_display_event_8h}{Display\+Event.\+h}}\item 
+\mbox{\hyperlink{_display_event_8cpp}{Display\+Event.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+\hypertarget{_sign_up_8h_source}{}\doxysection{Sign\+Up.\+h}
+\mbox{\hyperlink{_sign_up_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <wx/spinctrl.h>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <wx/image.h>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}single\_include/nlohmann/json.hpp"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <wx/file.h>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}./dbhandler/userdbhandler.h"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sign_up}{SignUp}}\ :\ \textcolor{keyword}{public}\ wxFrame}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_sign_up}{SignUp}}(\textcolor{keyword}{const}\ wxString\ \&title,\ \textcolor{keyword}{const}\ wxPoint\ \&pos,\ \textcolor{keyword}{const}\ wxSize\ \&size);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ UserDBHandler\ *handler;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ wxPanel\ *panelSign;}
+\DoxyCodeLine{00048\ \ \ \ \ wxButton\ *m\_btnSignUp;}
+\DoxyCodeLine{00049\ \ \ \ \ wxTextCtrl\ *nNameBox;}
+\DoxyCodeLine{00050\ \ \ \ \ wxTextCtrl\ *lNameBox;}
+\DoxyCodeLine{00051\ \ \ \ \ wxTextCtrl\ *uNameBox;}
+\DoxyCodeLine{00052\ \ \ \ \ wxTextCtrl\ *passBox;}
+\DoxyCodeLine{00053\ \ \ \ \ wxTextCtrl\ *cPassBox;}
+\DoxyCodeLine{00054\ \ \ \ \ wxSpinCtrl\ *dateUpDown;}
+\DoxyCodeLine{00055\ \ \ \ \ wxChoice\ *monthBox;}
+\DoxyCodeLine{00056\ \ \ \ \ wxSpinCtrl\ *yearUpDown;}
+\DoxyCodeLine{00057\ \ \ \ \ wxChoice\ *qBox;}
+\DoxyCodeLine{00058\ \ \ \ \ wxTextCtrl\ *secABox;}
+\DoxyCodeLine{00059\ \ \ \ \ wxStaticText\ *warn1;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sign_up_af2800095908aab545fa1a3d7b3b62d85}{signUpClicked}}(wxCommandEvent\ \&evt);\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sign_up_af2d72ec4eb734747e486aa6b0d669a99}{checkClicked}}(wxCommandEvent\ \&evt);}
+\DoxyCodeLine{00070\ \};}
+
+\end{DoxyCode}

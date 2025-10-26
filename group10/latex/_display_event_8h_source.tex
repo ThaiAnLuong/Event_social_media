@@ -1,0 +1,36 @@
+\hypertarget{_display_event_8h_source}{}\doxysection{Display\+Event.\+h}
+\mbox{\hyperlink{_display_event_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <wx/spinctrl.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <wx/image.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}single\_include/nlohmann/json.hpp"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <wx/file.h>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <wx/listctrl.h>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}./dbhandler/eventdbhandler.h"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}./dbhandler/userdbhandler.h"{}}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_display_event}{DisplayEvent}}\ :\textcolor{keyword}{public}\ wxFrame}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_display_event}{DisplayEvent}}(\textcolor{keyword}{const}\ wxString\ \&title,\ \textcolor{keyword}{const}\ wxPoint\ \&pos,\ \textcolor{keyword}{const}\ wxSize\ \&size,\ std::string\ curUser);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ UserDBHandler\ *\mbox{\hyperlink{class_display_event_aeb1946f233a7c15e308958056e7cf09a}{userHandler}};\ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ EventDBHandler\ *\mbox{\hyperlink{class_display_event_a6ae622183d8af0b41115e1257050cb7e}{eventHandler}};\ }
+\DoxyCodeLine{00053\ \ \ \ \ std::string\ \mbox{\hyperlink{class_display_event_a682808e2b607c660c0f2fb98c87d6f03}{user}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00054\ \};}
+
+\end{DoxyCode}

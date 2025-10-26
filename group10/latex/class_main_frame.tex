@@ -1,0 +1,144 @@
+\hypertarget{class_main_frame}{}\doxysection{Main\+Frame Class Reference}
+\label{class_main_frame}\index{MainFrame@{MainFrame}}
+
+
+login page of the program with login, createa account, reset password function  
+
+
+
+
+{\ttfamily \#include $<$Main\+Frame.\+h$>$}
+
+Inheritance diagram for Main\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_frame}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_frame_ac3cd882c222585f82e42f1b305c6ffb6}\label{class_main_frame_ac3cd882c222585f82e42f1b305c6ffb6}} 
+{\bfseries Main\+Frame} (const wx\+String \&title, const wx\+Point \&pos, const wx\+Size \&size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_frame_aca62df7982287e5b8213331c1d6ba04e}\label{class_main_frame_aca62df7982287e5b8213331c1d6ba04e}} 
+\mbox{\hyperlink{classhome}{home}} $\ast$ {\bfseries Home}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_frame_a728345bf9fbe6ba5af127bee2a99d139}{login\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Function to check the login information passed in and verify the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_frame_a25f325999a124da359afb1cd0a09f84c}{close\+Frame}} (wx\+Close\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Function to show a closing message on window closing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_frame_a9e1a326204da31386d47d51717f7e26d}{On\+Create\+Account\+Click}} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Function display the account creation page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_frame_aa473f3a396ff63c75f014f9076df170b}{On\+Reset\+Click}} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Function used to bring up the reset page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_frame_ad1efa0cd32337d8bca12b06b1597f7eb}\label{class_main_frame_ad1efa0cd32337d8bca12b06b1597f7eb}} 
+User\+DBHandler $\ast$ {\bfseries handler}
+\item 
+\mbox{\Hypertarget{class_main_frame_aa80cb36ac5c2d0dd958ac6c01adb95ea}\label{class_main_frame_aa80cb36ac5c2d0dd958ac6c01adb95ea}} 
+wx\+Static\+Text $\ast$ {\bfseries fail\+Log}
+\item 
+\mbox{\Hypertarget{class_main_frame_a6226a309a6aad57f3fcc4d98061ea581}\label{class_main_frame_a6226a309a6aad57f3fcc4d98061ea581}} 
+wx\+Panel $\ast$ {\bfseries panel1}
+\item 
+\mbox{\Hypertarget{class_main_frame_ae7bf383eed38168a300273674e05bbb1}\label{class_main_frame_ae7bf383eed38168a300273674e05bbb1}} 
+wx\+Button $\ast$ {\bfseries button}
+\item 
+\mbox{\Hypertarget{class_main_frame_a5dcf6b569c67235a3825fb45e199f051}\label{class_main_frame_a5dcf6b569c67235a3825fb45e199f051}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries user\+Log}
+\item 
+\mbox{\Hypertarget{class_main_frame_a7207002e1f881eb8b2f915412529a91b}\label{class_main_frame_a7207002e1f881eb8b2f915412529a91b}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries pass\+Log}
+\item 
+\mbox{\Hypertarget{class_main_frame_a61b34ee4735dfbcad0c794659bf9849a}\label{class_main_frame_a61b34ee4735dfbcad0c794659bf9849a}} 
+wx\+Static\+Text $\ast$ {\bfseries or\+Text}
+\item 
+\mbox{\Hypertarget{class_main_frame_a1a29d8a614d504b91a9d8476d69ab575}\label{class_main_frame_a1a29d8a614d504b91a9d8476d69ab575}} 
+wx\+Button $\ast$ {\bfseries reset\+Pass}
+\item 
+\mbox{\Hypertarget{class_main_frame_a79bc64691891b4f5d22ba6af7b4ee7e3}\label{class_main_frame_a79bc64691891b4f5d22ba6af7b4ee7e3}} 
+wx\+Button $\ast$ {\bfseries create\+Acc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+login page of the program with login, createa account, reset password function 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_frame_a25f325999a124da359afb1cd0a09f84c}\label{class_main_frame_a25f325999a124da359afb1cd0a09f84c}} 
+\index{MainFrame@{MainFrame}!closeFrame@{closeFrame}}
+\index{closeFrame@{closeFrame}!MainFrame@{MainFrame}}
+\doxysubsubsection{\texorpdfstring{closeFrame()}{closeFrame()}}
+{\footnotesize\ttfamily void Main\+Frame\+::close\+Frame (\begin{DoxyParamCaption}\item[{wx\+Close\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to show a closing message on window closing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger for closing the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_frame_a728345bf9fbe6ba5af127bee2a99d139}\label{class_main_frame_a728345bf9fbe6ba5af127bee2a99d139}} 
+\index{MainFrame@{MainFrame}!loginClicked@{loginClicked}}
+\index{loginClicked@{loginClicked}!MainFrame@{MainFrame}}
+\doxysubsubsection{\texorpdfstring{loginClicked()}{loginClicked()}}
+{\footnotesize\ttfamily void Main\+Frame\+::login\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to check the login information passed in and verify the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event trigger for when the event button is clicked \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_frame_a9e1a326204da31386d47d51717f7e26d}\label{class_main_frame_a9e1a326204da31386d47d51717f7e26d}} 
+\index{MainFrame@{MainFrame}!OnCreateAccountClick@{OnCreateAccountClick}}
+\index{OnCreateAccountClick@{OnCreateAccountClick}!MainFrame@{MainFrame}}
+\doxysubsubsection{\texorpdfstring{OnCreateAccountClick()}{OnCreateAccountClick()}}
+{\footnotesize\ttfamily void Main\+Frame\+::\+On\+Create\+Account\+Click (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function display the account creation page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Event trigger for clicking the account creation button \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_frame_aa473f3a396ff63c75f014f9076df170b}\label{class_main_frame_aa473f3a396ff63c75f014f9076df170b}} 
+\index{MainFrame@{MainFrame}!OnResetClick@{OnResetClick}}
+\index{OnResetClick@{OnResetClick}!MainFrame@{MainFrame}}
+\doxysubsubsection{\texorpdfstring{OnResetClick()}{OnResetClick()}}
+{\footnotesize\ttfamily void Main\+Frame\+::\+On\+Reset\+Click (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function used to bring up the reset page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Event trigger for cliicking the reset button \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_main_frame_8h}{Main\+Frame.\+h}}\item 
+\mbox{\hyperlink{_main_frame_8cpp}{Main\+Frame.\+cpp}}\end{DoxyCompactItemize}

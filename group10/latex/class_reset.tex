@@ -1,0 +1,160 @@
+\hypertarget{class_reset}{}\doxysection{Reset Class Reference}
+\label{class_reset}\index{Reset@{Reset}}
+
+
+This is the \mbox{\hyperlink{class_reset}{Reset}} class it defines a reset object. Our reset object is a window that pops-\/up. This window has an input box for the user that checks for valid Usernames then prompts them with the security question they answered when making an account.  
+
+
+
+
+{\ttfamily \#include $<$Reset.\+h$>$}
+
+Inheritance diagram for Reset\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_reset}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_reset_a7ee59e5c2c0868ee77ad6fe3e6054696}{Reset}} (const wx\+String \&title, const wx\+Point \&pos, const wx\+Size \&size, wx\+Array\+String)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_reset}{Reset}} Password window\+:\+: \mbox{\hyperlink{class_reset}{Reset}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_reset_a0df4793d730808436c1ea7fcaf77d216}{but\+Reset\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em This is the function that runs if the \mbox{\hyperlink{class_reset}{Reset}} password button is clicked, it checks that the security answer the user has is the same and then it takes the users input in the new password box and stores it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_reset_a12f48ceb22160e6c20679f657fc9fa35}{but\+Check\+Clicked}} (wx\+Command\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em This is the function that runs if the \mbox{\hyperlink{class_reset}{Reset}} password button is clicked, it checks that the security answer the user has is the same and then it takes the users input in the new password box and stores it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_reset_a9780dd94e5ae92eebe7804472cad73c8}\label{class_reset_a9780dd94e5ae92eebe7804472cad73c8}} 
+User\+DBHandler $\ast$ {\bfseries handler}
+\item 
+\mbox{\Hypertarget{class_reset_a6304d5bd9852d8b9c99ea8bc3ba11d1a}\label{class_reset_a6304d5bd9852d8b9c99ea8bc3ba11d1a}} 
+std\+::string {\bfseries security\+Ans}
+\item 
+\mbox{\Hypertarget{class_reset_acf924b9bf2253d50a0c97e112ee80814}\label{class_reset_acf924b9bf2253d50a0c97e112ee80814}} 
+wx\+Panel $\ast$ {\bfseries main\+Panel}
+\item 
+\mbox{\Hypertarget{class_reset_a891ff7a4ee67eb5fb710b0d8b546e45e}\label{class_reset_a891ff7a4ee67eb5fb710b0d8b546e45e}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries u\+Name\+Box}
+\item 
+\mbox{\Hypertarget{class_reset_a4a9dadbfd78158690c380e747183f0e4}\label{class_reset_a4a9dadbfd78158690c380e747183f0e4}} 
+wx\+Button $\ast$ {\bfseries but\+Check}
+\item 
+\mbox{\Hypertarget{class_reset_ab858e30905984759992abc1cc8fa4694}\label{class_reset_ab858e30905984759992abc1cc8fa4694}} 
+wx\+Panel $\ast$ {\bfseries info\+Panel}
+\item 
+\mbox{\Hypertarget{class_reset_a4da6addab5f587d0841343cb78af759e}\label{class_reset_a4da6addab5f587d0841343cb78af759e}} 
+wx\+Choice $\ast$ {\bfseries question\+Choice}
+\item 
+\mbox{\Hypertarget{class_reset_a2b398802f728479d7da91a78a9bc4811}\label{class_reset_a2b398802f728479d7da91a78a9bc4811}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries sec\+ABox}
+\item 
+\mbox{\Hypertarget{class_reset_aa62dc454fad38bd44a916777a18ac182}\label{class_reset_aa62dc454fad38bd44a916777a18ac182}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries new\+Pass\+Box}
+\item 
+\mbox{\Hypertarget{class_reset_a852c6ba3c2a8779972535a03cfa12995}\label{class_reset_a852c6ba3c2a8779972535a03cfa12995}} 
+wx\+Text\+Ctrl $\ast$ {\bfseries confirm\+Pass\+Box}
+\item 
+\mbox{\Hypertarget{class_reset_a8e1ad09895378d6292cc04a5267b19d0}\label{class_reset_a8e1ad09895378d6292cc04a5267b19d0}} 
+wx\+Button $\ast$ {\bfseries but\+Reset}
+\item 
+\mbox{\Hypertarget{class_reset_aaa4ed13043843857211a9ba475607a90}\label{class_reset_aaa4ed13043843857211a9ba475607a90}} 
+wx\+Static\+Text $\ast$ {\bfseries u\+Name}
+\item 
+\mbox{\Hypertarget{class_reset_ab49624e554616b109f6faab43dd543d9}\label{class_reset_ab49624e554616b109f6faab43dd543d9}} 
+wx\+Static\+Text $\ast$ {\bfseries secQ}
+\item 
+\mbox{\Hypertarget{class_reset_a76bb486b32b2108b58e8439ac8ef0070}\label{class_reset_a76bb486b32b2108b58e8439ac8ef0070}} 
+wx\+Static\+Text $\ast$ {\bfseries secA}
+\item 
+\mbox{\Hypertarget{class_reset_a1b8f1b14d1e88bb28021d539d19a621c}\label{class_reset_a1b8f1b14d1e88bb28021d539d19a621c}} 
+wx\+Static\+Text $\ast$ {\bfseries new\+Pass}
+\item 
+\mbox{\Hypertarget{class_reset_a07d37456925b8c499944690dcfbb8cd0}\label{class_reset_a07d37456925b8c499944690dcfbb8cd0}} 
+wx\+Static\+Text $\ast$ {\bfseries con\+Pass}
+\item 
+\mbox{\Hypertarget{class_reset_ad90d8352d84a6e0bddefdd08523481f8}\label{class_reset_ad90d8352d84a6e0bddefdd08523481f8}} 
+wx\+Static\+Text $\ast$ {\bfseries warn1}
+\item 
+\mbox{\Hypertarget{class_reset_abfc848a630ebf6e1836684a191fff524}\label{class_reset_abfc848a630ebf6e1836684a191fff524}} 
+wx\+Static\+Text $\ast$ {\bfseries warn2}
+\item 
+\mbox{\Hypertarget{class_reset_aec63fb8e9a6d18983912d9982e2a9c75}\label{class_reset_aec63fb8e9a6d18983912d9982e2a9c75}} 
+wx\+Static\+Text $\ast$ {\bfseries warn3}
+\item 
+\mbox{\Hypertarget{class_reset_a5e141318e6b0dad1646fb77b612df8d6}\label{class_reset_a5e141318e6b0dad1646fb77b612df8d6}} 
+std\+::string {\bfseries ans\+Save}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the \mbox{\hyperlink{class_reset}{Reset}} class it defines a reset object. Our reset object is a window that pops-\/up. This window has an input box for the user that checks for valid Usernames then prompts them with the security question they answered when making an account. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_reset_a7ee59e5c2c0868ee77ad6fe3e6054696}\label{class_reset_a7ee59e5c2c0868ee77ad6fe3e6054696}} 
+\index{Reset@{Reset}!Reset@{Reset}}
+\index{Reset@{Reset}!Reset@{Reset}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily Reset\+::\+Reset (\begin{DoxyParamCaption}\item[{const wx\+String \&}]{title,  }\item[{const wx\+Point \&}]{pos,  }\item[{const wx\+Size \&}]{size,  }\item[{wx\+Array\+String}]{q\+List }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_reset}{Reset}} Password window\+:\+: \mbox{\hyperlink{class_reset}{Reset}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & This is the title for the window that is generated to reset the password \\
+\hline
+{\em pos} & This is the position of the frame where the reset password window appears \\
+\hline
+{\em size} & This is the size of the window for the reset password pop-\/up \\
+\hline
+{\em q\+List} & This is the list of security questions for the user to andwe theirs \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_reset_a12f48ceb22160e6c20679f657fc9fa35}\label{class_reset_a12f48ceb22160e6c20679f657fc9fa35}} 
+\index{Reset@{Reset}!butCheckClicked@{butCheckClicked}}
+\index{butCheckClicked@{butCheckClicked}!Reset@{Reset}}
+\doxysubsubsection{\texorpdfstring{butCheckClicked()}{butCheckClicked()}}
+{\footnotesize\ttfamily void Reset\+::but\+Check\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This is the function that runs if the \mbox{\hyperlink{class_reset}{Reset}} password button is clicked, it checks that the security answer the user has is the same and then it takes the users input in the new password box and stores it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & This is the signal send to from the gui to click the button. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_reset_a0df4793d730808436c1ea7fcaf77d216}\label{class_reset_a0df4793d730808436c1ea7fcaf77d216}} 
+\index{Reset@{Reset}!butResetClicked@{butResetClicked}}
+\index{butResetClicked@{butResetClicked}!Reset@{Reset}}
+\doxysubsubsection{\texorpdfstring{butResetClicked()}{butResetClicked()}}
+{\footnotesize\ttfamily void Reset\+::but\+Reset\+Clicked (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This is the function that runs if the \mbox{\hyperlink{class_reset}{Reset}} password button is clicked, it checks that the security answer the user has is the same and then it takes the users input in the new password box and stores it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & This is the signal send to from the gui to click the button. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_reset_8h}{Reset.\+h}}\item 
+\mbox{\hyperlink{_reset_8cpp}{Reset.\+cpp}}\end{DoxyCompactItemize}

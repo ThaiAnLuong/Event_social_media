@@ -1,0 +1,26 @@
+[
+    {
+        "cPass": "password",
+        "date": 1993,
+        "lName": "",
+        "month": 3,
+        "nName": "thai",
+        "pass": "abc",
+        "secA": "one",
+        "secQ": 1,
+        "uName": "tluong",
+        "year": 15
+    },
+    {
+        "cPass": "johnpass",
+        "date": 1995,
+        "lName": "k",
+        "month": 11,
+        "nName": "john",
+        "pass": "johnpass",
+        "secA": "five",
+        "secQ": 5,
+        "uName": "johnk",
+        "year": 31
+    }
+]

@@ -1,0 +1,66 @@
+\hypertarget{home_8h_source}{}\doxysection{home.\+h}
+\mbox{\hyperlink{home_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <wx/image.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}single\_include/nlohmann/json.hpp"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <wx/file.h>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}./dbhandler/userdbhandler.h"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_account_info_8h}{AccountInfo.h}}"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_create_event_8h}{CreateEvent.h}}"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_edit_8h}{Edit.h}}"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_display_event_8h}{DisplayEvent.h}}"{}}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classhome}{home}}\ :\textcolor{keyword}{public}\ wxFrame}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classhome}{home}}(\textcolor{keyword}{const}\ wxString\&\ title,\ \textcolor{keyword}{const}\ wxPoint\&\ pos,\ \textcolor{keyword}{const}\ wxSize\&\ size,\ std::string);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//wxStaticText*\ uName;}}
+\DoxyCodeLine{00042\ \ \ \ \ std::string\ user;}
+\DoxyCodeLine{00043\ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ UserDBHandler*\ handler;}
+\DoxyCodeLine{00045\ \ \ \ \ wxPanel*\ mainPanel;}
+\DoxyCodeLine{00046\ \ \ \ \ wxPanel*\ searchPanel;}
+\DoxyCodeLine{00047\ \ \ \ \ wxPanel*\ butPanel;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ wxButton*\ butBack;}
+\DoxyCodeLine{00050\ \ \ \ \ wxButton*\ butFind;}
+\DoxyCodeLine{00051\ \ \ \ \ wxButton*\ butBoard;}
+\DoxyCodeLine{00052\ \ \ \ \ wxButton*\ butSearch;}
+\DoxyCodeLine{00053\ \ \ \ \ wxButton*\ butAccInfo;}
+\DoxyCodeLine{00054\ \ \ \ \ wxButton*\ butCreateEve;}
+\DoxyCodeLine{00055\ \ \ \ \ wxButton*\ butA;}
+\DoxyCodeLine{00056\ \ \ \ \ wxButton*\ butEdit;}
+\DoxyCodeLine{00057\ \ \ \ \ wxButton*\ butDisplayEve;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//wxButton*\ butDisplayEve2;}}
+\DoxyCodeLine{00059\ \ \ \ \ wxTextCtrl*\ uNameBox;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{//\ method\ here}}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ butBoardClicked(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhome_a0a14a88f39646ec873c70d3905e5e833}{butSearchClicked}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhome_ae8b69ca7da24a51d15dd8b8c5f1b799c}{butAccountlicked}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhome_af93d0e9f32182f2ab55bebebe4315c27}{butCreateClicked}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhome_a53dae804e5cfe1bf0cbffded839af915}{butBackClicked}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhome_a97cce33059a8c6bd56c3be312afd844a}{butFindClicked}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhome_a7d84d50864538206ce4c06f9529227ac}{butEditClicked}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhome_a23293622b6e5b0d12621dcbc323ea01e}{butDisplayClicked}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhome_adbffb0872f542885a5c8d5d903abad55}{closeFrame}}(wxCloseEvent\&\ evt);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{//void\ butDisplayClicked2(wxCommandEvent\&\ evt);}}
+\DoxyCodeLine{00072\ \ \ \ \ }
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \};}
+
+\end{DoxyCode}

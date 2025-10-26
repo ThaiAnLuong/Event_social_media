@@ -1,0 +1,89 @@
+\hypertarget{_account_info_8h_source}{}\doxysection{Account\+Info.\+h}
+\mbox{\hyperlink{_account_info_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <wx/image.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}single\_include/nlohmann/json.hpp"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}./dbhandler/userdbhandler.h"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}./dbhandler/eventdbhandler.h"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <wx/file.h>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_account_info_8h}{AccountInfo.h}}"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_account_info}{AccountInfo}}\ :\textcolor{keyword}{public}\ wxFrame}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:\textcolor{keywordtype}{void}\ butEditClicked(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_account_info}{AccountInfo}}(\textcolor{keyword}{const}\ wxString\&\ title,\ \textcolor{keyword}{const}\ wxPoint\&\ pos,\ \textcolor{keyword}{const}\ wxSize\&\ size,\ std::string\ searchedUser,\ std::string\ curUser,\textcolor{keywordtype}{int}\ isUser);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ sig;}
+\DoxyCodeLine{00036\ \ \ \ \ wxStaticText*\ uName;}
+\DoxyCodeLine{00037\ \ \ \ \ UserDBHandler*\ handler;}
+\DoxyCodeLine{00038\ \ \ \ \ EventDBHandler*\ eHandler;}
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<nlohmann::json>\ data;}
+\DoxyCodeLine{00040\ \ \ \ \ std::string\ searched;}
+\DoxyCodeLine{00041\ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ std::string\ curUser;}
+\DoxyCodeLine{00044\ \ \ \ \ std::string\ searchedUser;}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ wxPanel*\ mainPanel;}
+\DoxyCodeLine{00047\ \ \ \ \ wxPanel*\ displayPanel;\textcolor{comment}{//hide\ \ \ \ //pos\ 565,76\ (main)\ \ size\ 536\ ,\ 506\ ||\ \ \ \ Raise}}
+\DoxyCodeLine{00048\ \ \ \ \ wxButton*\ close;\ \ \ \ \textcolor{comment}{//\ pos\ 503,6\ (displayPanel)\ \ \ size\ 30,30}}
+\DoxyCodeLine{00049\ \ \ \ \ wxPanel*\ infoPanel;}
+\DoxyCodeLine{00050\ \ \ \ \ wxPanel*\ picPanel;}
+\DoxyCodeLine{00051\ \ \ \ \ wxPanel*\ testPanel;\textcolor{comment}{//delete\ this\ for\ profile\ picture}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ wxButton*\ butFollow;}
+\DoxyCodeLine{00055\ \ \ \ \ wxStaticText*\ uNameText;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ wxStaticText*\ nNameText;}
+\DoxyCodeLine{00058\ \ \ \ \ wxStaticText*\ nNameShow;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ wxStaticText*\ dateText;}
+\DoxyCodeLine{00061\ \ \ \ \ wxStaticText*\ dateShow;}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ wxStaticText*\ locText;}
+\DoxyCodeLine{00064\ \ \ \ \ wxStaticText*\ locShow;}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ wxArrayString\ evtList;}
+\DoxyCodeLine{00067\ \ \ \ \ wxListBox*\ createdEvt;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ wxStaticText*\ evtText;}
+\DoxyCodeLine{00071\ \ \ \ \ wxStaticText*\ hostText;}
+\DoxyCodeLine{00072\ \ \ \ \ wxStaticText*\ addrText;}
+\DoxyCodeLine{00073\ \ \ \ \ wxStaticText*\ priceText;}
+\DoxyCodeLine{00074\ \ \ \ \ wxStaticText*\ startText;}
+\DoxyCodeLine{00075\ \ \ \ \ wxStaticText*\ timeText;}
+\DoxyCodeLine{00076\ \ \ \ \ wxStaticText*\ desText;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ wxStaticText*\ event;}
+\DoxyCodeLine{00079\ \ \ \ \ wxStaticText*\ host;}
+\DoxyCodeLine{00080\ \ \ \ \ wxStaticText*\ addr;}
+\DoxyCodeLine{00081\ \ \ \ \ wxStaticText*\ price;}
+\DoxyCodeLine{00082\ \ \ \ \ wxStaticText*\ date;}
+\DoxyCodeLine{00083\ \ \ \ \ wxStaticText*\ time;}
+\DoxyCodeLine{00084\ \ \ \ \ wxStaticText*\ des;}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_account_info_a8b4d253504a2859afea11d24ed193150}{clickedFollow}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_account_info_a042078781e59e8c0ace3a873683b5fc1}{clickedUnfollow}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_account_info_a853b9d826ded94a48a600696f51694cf}{pickEvent}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_account_info_a1370569fd82b23ed2e1712bcf8f6fbc2}{setUpFrameProfile}}();}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_account_info_ab1cb25786aee6c5888e4619532110c54}{setUpFrameDifProfile}}(std::string\ findUsername);}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_account_info_a30877542f127ec72f1cbceb09e65d7e0}{closeClicked}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ getDetail(std::string\ eventName);}
+\DoxyCodeLine{00093\ \};}
+
+\end{DoxyCode}

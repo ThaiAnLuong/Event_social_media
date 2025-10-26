@@ -1,0 +1,163 @@
+\hypertarget{class_invite_d_b_handler}{}\doxysection{Invite\+DBHandler Class Reference}
+\label{class_invite_d_b_handler}\index{InviteDBHandler@{InviteDBHandler}}
+Inheritance diagram for Invite\+DBHandler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_invite_d_b_handler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_invite_d_b_handler_a3f0249aaf7b250a482a9e90a0031ff24}{Invite\+DBHandler}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em defines parameters for various invite functions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_invite_d_b_handler_a295cb6904f398c1d5b2afab8f3652725}{add\+Invite}} (std\+::string, std\+::string, std\+::string, int)
+\begin{DoxyCompactList}\small\item\em adds new invite \end{DoxyCompactList}\item 
+nlohmann\+::json \mbox{\hyperlink{class_invite_d_b_handler_a65bbeaa7cc3507b079af533a940163ea}{get\+Invite}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em returns invites in json format with details \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_invite_d_b_handler_a6eaf798218fbe5f8a51a38b7d923664a}{delete\+Invite}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em deletes created invite \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_handler}{Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_handler_a816a15102e240e4c7baa66f591d49540}\label{class_handler_a816a15102e240e4c7baa66f591d49540}} 
+{\bfseries Handler} (std\+::string, std\+::string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_invite_d_b_handler_a2a228a5f943454462a0b7677de60b116}{get\+Invite\+Id}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em defines constructor parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_handler}{Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_handler_a766cc91bb0f825ce94c0de0d592a22e0}\label{class_handler_a766cc91bb0f825ce94c0de0d592a22e0}} 
+void {\bfseries do\+Request} ()
+\item 
+\mbox{\Hypertarget{class_handler_a978fe1e5cbcaefccbee1394d1abbff41}\label{class_handler_a978fe1e5cbcaefccbee1394d1abbff41}} 
+void {\bfseries request\+Setup} (std\+::string, std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{class_handler_a42d582802f9f2f9e1fae89cd4af3e58a}\label{class_handler_a42d582802f9f2f9e1fae89cd4af3e58a}} 
+void {\bfseries erase\+Files} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_handler}{Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_handler_ae0a9ebf3ecfc710745286a01cc55b1e2}\label{class_handler_ae0a9ebf3ecfc710745286a01cc55b1e2}} 
+std\+::string {\bfseries APIKey}
+\item 
+\mbox{\Hypertarget{class_handler_ae24b8d2b7ef31f4a8538abade8aa795c}\label{class_handler_ae24b8d2b7ef31f4a8538abade8aa795c}} 
+std\+::string {\bfseries app\+Id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_invite_d_b_handler_a3f0249aaf7b250a482a9e90a0031ff24}\label{class_invite_d_b_handler_a3f0249aaf7b250a482a9e90a0031ff24}} 
+\index{InviteDBHandler@{InviteDBHandler}!InviteDBHandler@{InviteDBHandler}}
+\index{InviteDBHandler@{InviteDBHandler}!InviteDBHandler@{InviteDBHandler}}
+\doxysubsubsection{\texorpdfstring{InviteDBHandler()}{InviteDBHandler()}}
+{\footnotesize\ttfamily Invite\+DBHandler\+::\+Invite\+DBHandler (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+defines parameters for various invite functions 
+
+Connects to invites database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Id} & \\
+\hline
+{\em APIKey} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_invite_d_b_handler_a295cb6904f398c1d5b2afab8f3652725}\label{class_invite_d_b_handler_a295cb6904f398c1d5b2afab8f3652725}} 
+\index{InviteDBHandler@{InviteDBHandler}!addInvite@{addInvite}}
+\index{addInvite@{addInvite}!InviteDBHandler@{InviteDBHandler}}
+\doxysubsubsection{\texorpdfstring{addInvite()}{addInvite()}}
+{\footnotesize\ttfamily void Invite\+DBHandler\+::add\+Invite (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{,  }\item[{std\+::string}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+adds new invite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em event\+Id} & \\
+\hline
+{\em invite\+Id} & \\
+\hline
+{\em invite\+Status} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_invite_d_b_handler_a6eaf798218fbe5f8a51a38b7d923664a}\label{class_invite_d_b_handler_a6eaf798218fbe5f8a51a38b7d923664a}} 
+\index{InviteDBHandler@{InviteDBHandler}!deleteInvite@{deleteInvite}}
+\index{deleteInvite@{deleteInvite}!InviteDBHandler@{InviteDBHandler}}
+\doxysubsubsection{\texorpdfstring{deleteInvite()}{deleteInvite()}}
+{\footnotesize\ttfamily void Invite\+DBHandler\+::delete\+Invite (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+deletes created invite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em host\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_invite_d_b_handler_a65bbeaa7cc3507b079af533a940163ea}\label{class_invite_d_b_handler_a65bbeaa7cc3507b079af533a940163ea}} 
+\index{InviteDBHandler@{InviteDBHandler}!getInvite@{getInvite}}
+\index{getInvite@{getInvite}!InviteDBHandler@{InviteDBHandler}}
+\doxysubsubsection{\texorpdfstring{getInvite()}{getInvite()}}
+{\footnotesize\ttfamily json Invite\+DBHandler\+::get\+Invite (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+returns invites in json format with details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Id} & \\
+\hline
+{\em invite\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_invite_d_b_handler_a2a228a5f943454462a0b7677de60b116}\label{class_invite_d_b_handler_a2a228a5f943454462a0b7677de60b116}} 
+\index{InviteDBHandler@{InviteDBHandler}!getInviteId@{getInviteId}}
+\index{getInviteId@{getInviteId}!InviteDBHandler@{InviteDBHandler}}
+\doxysubsubsection{\texorpdfstring{getInviteId()}{getInviteId()}}
+{\footnotesize\ttfamily string Invite\+DBHandler\+::get\+Invite\+Id (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+defines constructor parameters 
+
+returns invites list
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Id} & \\
+\hline
+{\em invite\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{invitedbhandler_8h}{invitedbhandler.\+h}}\item 
+invitedbhandler.\+cpp\end{DoxyCompactItemize}

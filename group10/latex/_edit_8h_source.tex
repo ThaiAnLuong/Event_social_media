@@ -1,0 +1,71 @@
+\hypertarget{_edit_8h_source}{}\doxysection{Edit.\+h}
+\mbox{\hyperlink{_edit_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}single\_include/nlohmann/json.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <wx/gauge.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <wx/spinctrl.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <wx/progdlg.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <wx/image.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}./dbhandler/userdbhandler.h"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <wx/file.h>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_edit}{Edit}}\ :\ \textcolor{keyword}{public}\ wxFrame}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_edit}{Edit}}(\textcolor{keyword}{const}\ wxString\ \&,\ \textcolor{keyword}{const}\ wxPoint\ \&,\ \textcolor{keyword}{const}\ wxSize\ \&,\ std::string);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//data\ base}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{string}\ curUser;}
+\DoxyCodeLine{00047\ \ \ \ \ UserDBHandler\ *handler;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ wxPanel\ *mainPanel;}
+\DoxyCodeLine{00050\ \ \ \ \ wxPanel\ *infoPanel;}
+\DoxyCodeLine{00051\ \ \ \ \ wxPanel\ *passwordPanel;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ wxButton\ *saveInfo;}
+\DoxyCodeLine{00054\ \ \ \ \ wxButton\ *savePass;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ wxArrayString\ options;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//options.Add("{}\ name\ of\ chgane"{});}}
+\DoxyCodeLine{00058\ \ \ \ \ wxListBox\ *changeOption;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//for\ change\ password}}
+\DoxyCodeLine{00061\ \ \ \ \ wxTextCtrl\ *curPass;}
+\DoxyCodeLine{00062\ \ \ \ \ wxTextCtrl\ *newPass;}
+\DoxyCodeLine{00063\ \ \ \ \ wxTextCtrl\ *conPass;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ wxStaticText\ *curPassText;}
+\DoxyCodeLine{00066\ \ \ \ \ wxStaticText\ *newPassText;}
+\DoxyCodeLine{00067\ \ \ \ \ wxStaticText\ *conPassText;}
+\DoxyCodeLine{00068\ \ \ \ \ wxStaticText\ *warn1;}
+\DoxyCodeLine{00069\ \ \ \ \ wxStaticText\ *warn2;}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{//for\ change\ account\ info}}
+\DoxyCodeLine{00072\ \ \ \ \ wxStaticText\ *lNameText;}
+\DoxyCodeLine{00073\ \ \ \ \ wxTextCtrl\ *lName;}
+\DoxyCodeLine{00074\ \ \ \ \ wxStaticText\ *nNameText;}
+\DoxyCodeLine{00075\ \ \ \ \ wxTextCtrl\ *nName;}
+\DoxyCodeLine{00076\ \ \ \ \ wxStaticText\ *dob;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ wxSpinCtrl\ *dateUpDown;}
+\DoxyCodeLine{00079\ \ \ \ \ wxChoice\ *monthBox;}
+\DoxyCodeLine{00080\ \ \ \ \ wxSpinCtrl\ *yearUpDown;}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_a92594a8483a46db25ee8bc5306035959}{pick}}(wxCommandEvent\ \&evt);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_ab34a35123cd58bc926c5d4bf8daf594b}{savePassClicked}}(wxCommandEvent\ \&evt);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_ade279d9190d4be7f8ca4cb76c9942924}{saveInfoClicked}}(wxCommandEvent\ \&evt);}
+\DoxyCodeLine{00099\ \};}
+
+\end{DoxyCode}

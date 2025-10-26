@@ -1,0 +1,44 @@
+\hypertarget{_main_frame_8h_source}{}\doxysection{Main\+Frame.\+h}
+\mbox{\hyperlink{_main_frame_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <wx/hyperlink.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <wx/image.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_reset_8h}{Reset.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sign_up_8h}{SignUp.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{home_8h}{home.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}./dbhandler/userdbhandler.h"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}single\_include/nlohmann/json.hpp"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_frame}{MainFrame}}\ :\textcolor{keyword}{public}\ wxFrame}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_main_frame}{MainFrame}}(\textcolor{keyword}{const}\ wxString\&\ title,\ \textcolor{keyword}{const}\ wxPoint\&\ pos,\ \textcolor{keyword}{const}\ wxSize\&\ size);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classhome}{home}}*\ Home;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ UserDBHandler*\ handler;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ wxStaticText*\ failLog;}
+\DoxyCodeLine{00039\ \ \ \ \ wxPanel*\ panel1;}
+\DoxyCodeLine{00040\ \ \ \ \ wxButton*\ button;}
+\DoxyCodeLine{00041\ \ \ \ \ wxTextCtrl*\ userLog;}
+\DoxyCodeLine{00042\ \ \ \ \ wxTextCtrl*\ passLog;}
+\DoxyCodeLine{00043\ \ \ \ \ wxStaticText*\ orText;}
+\DoxyCodeLine{00044\ \ \ \ \ wxButton*\ resetPass;}
+\DoxyCodeLine{00045\ \ \ \ \ wxButton*\ createAcc;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_frame_a728345bf9fbe6ba5af127bee2a99d139}{loginClicked}}(wxCommandEvent\&\ evt);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_frame_a25f325999a124da359afb1cd0a09f84c}{closeFrame}}(wxCloseEvent\&\ evt);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_frame_a9e1a326204da31386d47d51717f7e26d}{OnCreateAccountClick}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_frame_aa473f3a396ff63c75f014f9076df170b}{OnResetClick}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00052\ \};}
+
+\end{DoxyCode}
